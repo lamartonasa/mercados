@@ -21,12 +21,37 @@ function num(raw) {
 const PLAZA = { rosario: "rosario", "bahia blanca": "bahiaBlanca", quequen: "quequen", darsena: "darsena" };
 const GRANO = { trigo: "trigo", maiz: "maiz", girasol: "girasol", soja: "soja" };
 
-const res = await fetch(URL, { headers: { "User-Agent": UA, Accept: "text/html" } });
-if (!res.ok) {
-  console.log("Fuente respondió", res.status, "- se mantienen los datos previos.");
+// La Bolsa bloquea a los servidores: leemos a través de ScraperAPI (IP permitida).
+const KEY = process.env.SCRAPER_API_KEY;
+const fetchUrl = KEY
+  ? `https://api.scraperapi.com/?api_key=${KEY}&url=${encodeURIComponent(URL)}`
+  : URL;
+
+// El servicio a veces da un error puntual: reintentamos hasta 4 veces.
+async function traerHtml() {
+  for (let intento = 1; intento <= 4; intento++) {
+    try {
+      const r = await fetch(fetchUrl, { headers: { "User-Agent": UA, Accept: "text/html" } });
+      if (r.ok) {
+        const t = await r.text();
+        if (t.includes("bloque-tabla")) return t; // vino la página con datos
+        console.log("Intento", intento, "sin datos esperados");
+      } else {
+        console.log("Intento", intento, "respondió", r.status);
+      }
+    } catch (e) {
+      console.log("Intento", intento, "falló:", e.message);
+    }
+    await new Promise((s) => setTimeout(s, 5000));
+  }
+  return null;
+}
+
+const html = await traerHtml();
+if (!html) {
+  console.log("No se pudo leer la fuente tras varios intentos - se mantienen los datos previos.");
   process.exit(0); // no pisar los datos buenos
 }
-const html = await res.text();
 const $ = cheerio.load(html);
 
 let fecha = new Date().toISOString().slice(0, 10);
