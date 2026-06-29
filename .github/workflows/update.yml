@@ -17,10 +17,12 @@ jobs:
           node-version: "20"
       - run: npm install cheerio
       - run: node scrape.mjs
+        env:
+          SCRAPER_API_KEY: ${{ secrets.SCRAPER_API_KEY }}
       - name: Guardar cambios
         run: |
           git config user.name "github-actions"
           git config user.email "actions@github.com"
-          git add pizarra.json mercados.json historial.json
-          git commit -m "Precios actualizados" || echo "sin cambios"
+          git add -A
+          git diff --staged --quiet || git commit -m "Precios actualizados"
           git push
