@@ -1,0 +1,262 @@
+{
+  "fecha": "2026-06-25",
+  "flash": [
+    {
+      "grano": "Trigo",
+      "categorias": [
+        {
+          "titulo": "Disponibles",
+          "filas": [
+            {
+              "mercado": "Cámara-Ros. $/t",
+              "posicion": "25/06",
+              "varDir": "down",
+              "precio": "293.600"
+            },
+            {
+              "mercado": "A3 Mercados",
+              "posicion": "26/06",
+              "varDir": "igual",
+              "precio": "297.000"
+            }
+          ]
+        },
+        {
+          "titulo": "Futuros A3 Mercados",
+          "filas": [
+            {
+              "mercado": "Rosario Jul US$/t",
+              "posicion": "25/06",
+              "varDir": "down",
+              "precio": "203"
+            }
+          ]
+        },
+        {
+          "titulo": "FOB MAGyP",
+          "filas": [
+            {
+              "mercado": "Spot US$/t",
+              "posicion": "25/06",
+              "varDir": "up",
+              "precio": "236"
+            }
+          ]
+        },
+        {
+          "titulo": "CBOT",
+          "filas": [
+            {
+              "mercado": "Jul. US$/t",
+              "posicion": "25/06",
+              "varDir": "up",
+              "precio": "227,97"
+            }
+          ]
+        },
+        {
+          "titulo": "FAS MAGyP",
+          "filas": [
+            {
+              "mercado": "Valor de Mercado $/t PIE",
+              "posicion": "25/06",
+              "varDir": "up",
+              "precio": "298.635"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grano": "Maíz",
+      "categorias": [
+        {
+          "titulo": "Disponibles",
+          "filas": [
+            {
+              "mercado": "Cámara-Ros. $/t",
+              "posicion": "25/06",
+              "varDir": "up",
+              "precio": "264.240"
+            },
+            {
+              "mercado": "A3 Mercados",
+              "posicion": "26/06",
+              "varDir": "down",
+              "precio": "267.000"
+            }
+          ]
+        },
+        {
+          "titulo": "Futuros A3 Mercados",
+          "filas": [
+            {
+              "mercado": "Rosario Jul US$/t",
+              "posicion": "25/06",
+              "varDir": "up",
+              "precio": "179,5"
+            }
+          ]
+        },
+        {
+          "titulo": "FOB MAGyP",
+          "filas": [
+            {
+              "mercado": "Spot US$/t",
+              "posicion": "25/06",
+              "varDir": "up",
+              "precio": "199"
+            }
+          ]
+        },
+        {
+          "titulo": "CBOT",
+          "filas": [
+            {
+              "mercado": "Jul. US$/t",
+              "posicion": "25/06",
+              "varDir": "up",
+              "precio": "163,29"
+            }
+          ]
+        },
+        {
+          "titulo": "FAS MAGyP",
+          "filas": [
+            {
+              "mercado": "Valor de Mercado $/t PIE",
+              "posicion": "25/06",
+              "varDir": "up",
+              "precio": "247.549"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grano": "Soja",
+      "categorias": [
+        {
+          "titulo": "Disponibles",
+          "filas": [
+            {
+              "mercado": "Cámara-Ros. $/t",
+              "posicion": "25/06",
+              "varDir": "up",
+              "precio": "480.000"
+            },
+            {
+              "mercado": "A3 Mercados",
+              "posicion": "26/06",
+              "varDir": "down",
+              "precio": "479.000"
+            }
+          ]
+        },
+        {
+          "titulo": "Futuros A3 Mercados",
+          "filas": [
+            {
+              "mercado": "Rosario Jul US$/t",
+              "posicion": "25/06",
+              "varDir": "up",
+              "precio": "329,2"
+            }
+          ]
+        },
+        {
+          "titulo": "FOB MAGyP",
+          "filas": [
+            {
+              "mercado": "Spot US$/t",
+              "posicion": "25/06",
+              "varDir": "down",
+              "precio": "421"
+            }
+          ]
+        },
+        {
+          "titulo": "CBOT",
+          "filas": [
+            {
+              "mercado": "Jul. US$/t",
+              "posicion": "25/06",
+              "varDir": "up",
+              "precio": "414,24"
+            }
+          ]
+        },
+        {
+          "titulo": "FAS MAGyP",
+          "filas": [
+            {
+              "mercado": "Valor de Mercado $/t PIE",
+              "posicion": "25/06",
+              "varDir": "up",
+              "precio": "497.902"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "grano": "Girasol",
+      "categorias": [
+        {
+          "titulo": "Disponibles",
+          "filas": [
+            {
+              "mercado": "Cámara-Ros. $/t",
+              "posicion": "",
+              "varDir": "igual",
+              "precio": "s/c"
+            },
+            {
+              "mercado": "Disponible US$/t",
+              "posicion": "26/06",
+              "varDir": "up",
+              "precio": "650.000"
+            }
+          ]
+        },
+        {
+          "titulo": "Futuros A3 Mercados",
+          "filas": [
+            {
+              "mercado": "Disponible",
+              "posicion": "",
+              "varDir": "igual",
+              "precio": "s/c"
+            }
+          ]
+        },
+        {
+          "titulo": "FOB MAGyP",
+          "filas": [
+            {
+              "mercado": "Spot US$/t",
+              "posicion": "25/06",
+              "varDir": "igual",
+              "precio": "482"
+            }
+          ]
+        },
+        {
+          "titulo": "FAS MAGyP",
+          "filas": [
+            {
+              "mercado": "Valor de Mercado $/t PIE",
+              "posicion": "25/06",
+              "varDir": "down",
+              "precio": "583.457"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "dolar": {
+    "compra": 1468,
+    "venta": 1477
+  }
+}

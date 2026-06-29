@@ -1,0 +1,16 @@
+[
+  {
+    "fecha": "2026-06-25",
+    "dolar": {
+      "compra": 1468,
+      "venta": 1477
+    },
+    "pizarra": {
+      "rosario": {
+        "trigo": 293600,
+        "maiz": 264240,
+        "soja": 480000
+      }
+    }
+  }
+]
