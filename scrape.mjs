@@ -1,7 +1,7 @@
-// Robot diario (GitHub Actions, 1 vez por día). Guarda en JSON:
+// Robot diario (GitHub Actions). Guarda en JSON:
 //  - pizarra.json + mercados.json (pizarra, flash y dólar de la Cámara Arbitral)
 //  - historial-pizarra.json (pizarras de los últimos ~90 días)
-//  - mag.json (resumen de hacienda del Mercado Agroganadero)
+//  - dolar.json (Cotización Divisas del Banco Nación, valor del día)
 import * as cheerio from "cheerio";
 import fs from "fs";
 
@@ -9,6 +9,9 @@ const URL = "https://www.bolsadecereales.com/camara-arbitral";
 const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36";
 const FUENTE = "Cámara Arbitral de Cereales — Bolsa de Cereales de Buenos Aires";
+const KEY = process.env.SCRAPER_API_KEY;
+const viaScraper = (u) =>
+  KEY ? `https://api.scraperapi.com/?api_key=${KEY}&url=${encodeURIComponent(u)}` : u;
 
 const norm = (t) => t.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().trim();
 function num(raw) {
@@ -22,42 +25,33 @@ function num(raw) {
 const PLAZA = { rosario: "rosario", "bahia blanca": "bahiaBlanca", quequen: "quequen", darsena: "darsena" };
 const GRANO = { trigo: "trigo", maiz: "maiz", girasol: "girasol", soja: "soja" };
 
-// La Bolsa bloquea a los servidores: leemos a través de ScraperAPI (IP permitida).
-const KEY = process.env.SCRAPER_API_KEY;
-const fetchUrl = KEY
-  ? `https://api.scraperapi.com/?api_key=${KEY}&url=${encodeURIComponent(URL)}`
-  : URL;
-
 async function traerHtml() {
   for (let intento = 1; intento <= 4; intento++) {
     try {
-      const r = await fetch(fetchUrl, { headers: { "User-Agent": UA, Accept: "text/html" } });
+      const r = await fetch(viaScraper(URL), { headers: { "User-Agent": UA, Accept: "text/html" } });
       if (r.ok) {
         const t = await r.text();
         if (t.includes("bloque-tabla")) return t;
-        console.log("Intento", intento, "sin datos esperados");
-      } else {
-        console.log("Intento", intento, "respondió", r.status);
-      }
+        console.log("Cámara intento", intento, "sin datos");
+      } else console.log("Cámara intento", intento, "->", r.status);
     } catch (e) {
-      console.log("Intento", intento, "falló:", e.message);
+      console.log("Cámara intento", intento, "falló:", e.message);
     }
     await new Promise((s) => setTimeout(s, 5000));
   }
   return null;
 }
 
+// ===== Cámara Arbitral (pizarra + flash + historial) =====
 const html = await traerHtml();
 if (!html) {
   console.log("No se pudo leer la Cámara - se mantienen los datos previos.");
 } else {
   const $ = cheerio.load(html);
-
   let fecha = new Date().toISOString().slice(0, 10);
   const fi = $('input[name="fecha"]').attr("value");
   if (fi) fecha = fi;
 
-  // --- Pizarra ---
   const cell = () => ({ pesos: null, usd: null });
   const precios = {
     rosario: { trigo: cell(), maiz: cell(), girasol: cell(), soja: cell() },
@@ -81,16 +75,14 @@ if (!html) {
     });
   });
 
-  // --- Dólar BNA Divisas (de la Cámara) ---
-  let dolar = null;
+  let dolarCamara = null;
   $("tr").each((_, tr) => {
     const td = $(tr).find("td");
     if (td.length >= 3 && norm($(td[0]).text()).includes("banco nacion")) {
-      dolar = { compra: num($(td[1]).text()), venta: num($(td[2]).text()) };
+      dolarCamara = { compra: num($(td[1]).text()), venta: num($(td[2]).text()) };
     }
   });
 
-  // --- Flash de cotizaciones ---
   const FG = [["trigo", "Trigo"], ["maiz", "Maíz"], ["soja", "Soja"], ["girasol", "Girasol"]];
   const flash = FG.map(([k, label]) => {
     const cats = [];
@@ -116,16 +108,11 @@ if (!html) {
   });
 
   fs.writeFileSync("pizarra.json", JSON.stringify({ fecha, fuente: FUENTE, automatica: true, precios }, null, 2));
-  fs.writeFileSync("mercados.json", JSON.stringify({ fecha, flash, dolar }, null, 2));
+  fs.writeFileSync("mercados.json", JSON.stringify({ fecha, flash, dolar: dolarCamara }, null, 2));
 
-  // --- Historial completo de pizarras ---
   let histP = [];
-  try {
-    histP = JSON.parse(fs.readFileSync("historial-pizarra.json", "utf-8"));
-  } catch {}
-  const hayDato = Object.values(precios).some((p) =>
-    Object.values(p).some((c) => c.pesos != null || c.usd != null)
-  );
+  try { histP = JSON.parse(fs.readFileSync("historial-pizarra.json", "utf-8")); } catch {}
+  const hayDato = Object.values(precios).some((p) => Object.values(p).some((c) => c.pesos != null || c.usd != null));
   if (hayDato) {
     histP = histP.filter((d) => d.fecha !== fecha);
     histP.push({ fecha, precios });
@@ -133,66 +120,42 @@ if (!html) {
     histP = histP.slice(-90);
     fs.writeFileSync("historial-pizarra.json", JSON.stringify(histP, null, 2));
   }
-  console.log("Cámara OK", fecha, "| dólar", JSON.stringify(dolar), "| historial", histP.length, "días");
+  console.log("Cámara OK", fecha, "| historial", histP.length, "días");
 }
 
-// ===== MAG (hacienda — Mercado Agroganadero de Cañuelas) =====
-// Formato MAG: coma = decimal; punto = miles ("5.130" = 5130 cabezas).
-function magNum(raw) {
-  const clean = (raw || "").replace(/[^0-9.,]/g, "");
-  if (!clean) return null;
-  const n = clean.includes(",") ? clean.replace(/\./g, "").replace(",", ".") : clean.replace(/\./g, "");
-  const v = Number(n);
-  return Number.isFinite(v) ? v : null;
-}
-function parseMag(htmlMag) {
-  const $ = cheerio.load(htmlMag);
-  const categorias = [];
-  let inmag = null, igmag = null, totalCabezas = null, fechaMag = "";
-  const m = htmlMag.match(/(\d{2}\/\d{2}\/\d{4})\s+AL/i);
-  if (m) fechaMag = m[1];
-  let lastGroup = "";
-  $("tr").each((_, tr) => {
-    const tds = $(tr).find("td");
-    if (tds.length < 6) return;
-    const cat = $(tds[0]).text().replace(/\s+/g, " ").trim();
-    const prom = magNum($(tds[3]).text());
-    if (/totales/i.test($(tr).text())) {
-      igmag = prom ?? igmag;
-      totalCabezas = magNum($(tds[5]).text()) ?? totalCabezas;
-      return;
-    }
-    if (cat === "" && prom != null) {
-      if (lastGroup.startsWith("NOVILLOS")) inmag = prom;
-      return;
-    }
-    if (!cat || /categoria|m[ií]nimo/i.test($(tr).text().slice(0, 40))) return;
-    const min = magNum($(tds[1]).text());
-    const max = magNum($(tds[2]).text());
-    const cabezas = magNum($(tds[5]).text());
-    if (min == null && max == null && prom == null) return;
-    lastGroup = cat;
-    categorias.push({ cat, min, max, prom, cabezas });
-  });
-  return { fecha: fechaMag, inmag, igmag, totalCabezas, categorias, fuente: "Mercado Agroganadero (MAG) — Cañuelas" };
-}
-
-try {
-  const magRes = await fetch("https://www.mercadoagroganadero.com.ar/dll/hacienda1.dll/haciinfo000002", {
-    headers: { "User-Agent": UA, Accept: "text/html" },
-  });
-  if (magRes.ok) {
-    const magHtml = Buffer.from(await magRes.arrayBuffer()).toString("latin1");
-    const mag = parseMag(magHtml);
-    if (mag.categorias.length > 0) {
-      fs.writeFileSync("mag.json", JSON.stringify(mag, null, 2));
-      console.log("MAG OK", mag.fecha, "|", mag.categorias.length, "categorías");
-    } else {
-      console.log("MAG sin tabla (feriado/jueves) - se mantiene el previo");
-    }
-  } else {
-    console.log("MAG respondió", magRes.status);
+// ===== Dólar Banco Nación — Cotización Divisas (valor del día) =====
+async function getBnaDolar() {
+  for (let i = 1; i <= 5; i++) {
+    try {
+      const r = await fetch(viaScraper("https://www.bna.com.ar/Personas"), { headers: { "User-Agent": UA } });
+      if (r.ok) {
+        const $ = cheerio.load(await r.text());
+        const cont = $("#divisas");
+        const m = cont.text().match(/(\d{1,2})\/(\d{1,2})\/(\d{4})/);
+        const fecha = m
+          ? `${m[3]}-${m[2].padStart(2, "0")}-${m[1].padStart(2, "0")}`
+          : new Date().toISOString().slice(0, 10);
+        let compra = null, venta = null;
+        cont.find("tr").each((_, tr) => {
+          const td = $(tr).find("td");
+          if (td.length >= 3 && /d[oó]lar u\.?s\.?a/i.test($(td[0]).text())) {
+            compra = num($(td[1]).text());
+            venta = num($(td[2]).text());
+          }
+        });
+        if (compra != null && venta != null) return { fecha, compra, venta };
+      }
+      console.log("BNA intento", i, "->", r.status);
+    } catch (e) { console.log("BNA intento", i, "falló:", e.message); }
+    await new Promise((s) => setTimeout(s, 4000));
   }
-} catch (e) {
-  console.log("MAG falló:", e.message);
+  return null;
+}
+
+const bna = await getBnaDolar();
+if (bna) {
+  fs.writeFileSync("dolar.json", JSON.stringify(bna, null, 2));
+  console.log("Dólar BNA OK", bna.fecha, "|", bna.compra + "/" + bna.venta);
+} else {
+  console.log("Dólar BNA: no se pudo (se mantiene el previo)");
 }

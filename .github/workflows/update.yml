@@ -1,7 +1,8 @@
 name: Actualizar precios
 on:
   schedule:
-    - cron: "0 19 * * *"
+    - cron: "5 18 * * 1-5"   # ~15:05 hora Argentina (despues del cierre del dolar)
+    - cron: "5 21 * * 1-5"   # ~18:05 hora Argentina (para la pizarra, que sale mas tarde)
   workflow_dispatch: {}
   push:
     branches: [main]
