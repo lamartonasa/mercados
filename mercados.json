@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-06-26",
+  "fecha": "2026-06-29",
   "flash": [
     {
       "grano": "Trigo",
@@ -9,9 +9,9 @@
           "filas": [
             {
               "mercado": "Cámara-Ros. $/t",
-              "posicion": "25/06",
-              "varDir": "down",
-              "precio": "293.600"
+              "posicion": "29/06",
+              "varDir": "up",
+              "precio": "294.500"
             },
             {
               "mercado": "A3 Mercados",
@@ -26,9 +26,9 @@
           "filas": [
             {
               "mercado": "Rosario Jul US$/t",
-              "posicion": "25/06",
+              "posicion": "29/06",
               "varDir": "down",
-              "precio": "203"
+              "precio": "200,5"
             }
           ]
         },
@@ -37,9 +37,9 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "25/06",
-              "varDir": "up",
-              "precio": "236"
+              "posicion": "29/06",
+              "varDir": "down",
+              "precio": "231"
             }
           ]
         },
@@ -59,9 +59,9 @@
           "filas": [
             {
               "mercado": "Valor de Mercado $/t PIE",
-              "posicion": "25/06",
-              "varDir": "up",
-              "precio": "298.635"
+              "posicion": "29/06",
+              "varDir": "down",
+              "precio": "292.891"
             }
           ]
         }
@@ -75,9 +75,9 @@
           "filas": [
             {
               "mercado": "Cámara-Ros. $/t",
-              "posicion": "25/06",
+              "posicion": "29/06",
               "varDir": "up",
-              "precio": "264.240"
+              "precio": "264.900"
             },
             {
               "mercado": "A3 Mercados",
@@ -92,9 +92,9 @@
           "filas": [
             {
               "mercado": "Rosario Jul US$/t",
-              "posicion": "25/06",
-              "varDir": "up",
-              "precio": "179,5"
+              "posicion": "29/06",
+              "varDir": "down",
+              "precio": "177,6"
             }
           ]
         },
@@ -103,9 +103,9 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "25/06",
-              "varDir": "up",
-              "precio": "199"
+              "posicion": "29/06",
+              "varDir": "down",
+              "precio": "197"
             }
           ]
         },
@@ -125,9 +125,9 @@
           "filas": [
             {
               "mercado": "Valor de Mercado $/t PIE",
-              "posicion": "25/06",
-              "varDir": "up",
-              "precio": "247.549"
+              "posicion": "29/06",
+              "varDir": "down",
+              "precio": "245.814"
             }
           ]
         }
@@ -141,9 +141,9 @@
           "filas": [
             {
               "mercado": "Cámara-Ros. $/t",
-              "posicion": "25/06",
-              "varDir": "up",
-              "precio": "480.000"
+              "posicion": "29/06",
+              "varDir": "down",
+              "precio": "475.000"
             },
             {
               "mercado": "A3 Mercados",
@@ -158,9 +158,9 @@
           "filas": [
             {
               "mercado": "Rosario Jul US$/t",
-              "posicion": "25/06",
-              "varDir": "up",
-              "precio": "329,2"
+              "posicion": "29/06",
+              "varDir": "down",
+              "precio": "325,8"
             }
           ]
         },
@@ -169,9 +169,9 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "25/06",
+              "posicion": "29/06",
               "varDir": "down",
-              "precio": "421"
+              "precio": "414"
             }
           ]
         },
@@ -191,9 +191,9 @@
           "filas": [
             {
               "mercado": "Valor de Mercado $/t PIE",
-              "posicion": "25/06",
-              "varDir": "up",
-              "precio": "497.902"
+              "posicion": "29/06",
+              "varDir": "down",
+              "precio": "486.620"
             }
           ]
         }
@@ -235,9 +235,9 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "25/06",
-              "varDir": "igual",
-              "precio": "482"
+              "posicion": "29/06",
+              "varDir": "up",
+              "precio": "492"
             }
           ]
         },
@@ -246,9 +246,9 @@
           "filas": [
             {
               "mercado": "Valor de Mercado $/t PIE",
-              "posicion": "25/06",
-              "varDir": "down",
-              "precio": "583.457"
+              "posicion": "29/06",
+              "varDir": "up",
+              "precio": "589.377"
             }
           ]
         }
@@ -256,7 +256,7 @@
     }
   ],
   "dolar": {
-    "compra": 1468,
-    "venta": 1477
+    "compra": 1472.5,
+    "venta": 1481.5
   }
 }
