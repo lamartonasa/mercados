@@ -1,0 +1,849 @@
+[
+  {
+    "fecha": "2026-06-11",
+    "precios": {
+      "rosario": {
+        "trigo": {
+          "pesos": 292500,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": 254500,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": 460000,
+          "usd": null
+        }
+      },
+      "bahiaBlanca": {
+        "trigo": {
+          "pesos": null,
+          "usd": 210
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": 180
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      },
+      "quequen": {
+        "trigo": {
+          "pesos": null,
+          "usd": 206
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": 178
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      },
+      "darsena": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      }
+    }
+  },
+  {
+    "fecha": "2026-06-12",
+    "precios": {
+      "rosario": {
+        "trigo": {
+          "pesos": 290900,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": 254710,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": 460000,
+          "usd": null
+        }
+      },
+      "bahiaBlanca": {
+        "trigo": {
+          "pesos": null,
+          "usd": 210
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": 180
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      },
+      "quequen": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": 178
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": 306.3
+        }
+      },
+      "darsena": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      }
+    }
+  },
+  {
+    "fecha": "2026-06-16",
+    "precios": {
+      "rosario": {
+        "trigo": {
+          "pesos": 292637,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": 256950,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": 465000,
+          "usd": null
+        }
+      },
+      "bahiaBlanca": {
+        "trigo": {
+          "pesos": null,
+          "usd": 210
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": 180
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      },
+      "quequen": {
+        "trigo": {
+          "pesos": null,
+          "usd": 205
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": 180
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      },
+      "darsena": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      }
+    }
+  },
+  {
+    "fecha": "2026-06-17",
+    "precios": {
+      "rosario": {
+        "trigo": {
+          "pesos": 293660,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": 257850,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": 465000,
+          "usd": null
+        }
+      },
+      "bahiaBlanca": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": 180
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": 310
+        }
+      },
+      "quequen": {
+        "trigo": {
+          "pesos": null,
+          "usd": 205
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": 178.4
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": 307
+        }
+      },
+      "darsena": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      }
+    }
+  },
+  {
+    "fecha": "2026-06-18",
+    "precios": {
+      "rosario": {
+        "trigo": {
+          "pesos": 295610,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": 259560,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": 648900,
+          "usd": null
+        },
+        "soja": {
+          "pesos": 465000,
+          "usd": null
+        }
+      },
+      "bahiaBlanca": {
+        "trigo": {
+          "pesos": null,
+          "usd": 210
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": 180
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": 310
+        }
+      },
+      "quequen": {
+        "trigo": {
+          "pesos": null,
+          "usd": 205
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      },
+      "darsena": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      }
+    }
+  },
+  {
+    "fecha": "2026-06-19",
+    "precios": {
+      "rosario": {
+        "trigo": {
+          "pesos": 297660,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": 261360,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": 465000,
+          "usd": null
+        }
+      },
+      "bahiaBlanca": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": 180
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": 307
+        }
+      },
+      "quequen": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": 306
+        }
+      },
+      "darsena": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      }
+    }
+  },
+  {
+    "fecha": "2026-06-22",
+    "precios": {
+      "rosario": {
+        "trigo": {
+          "pesos": 297760,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": 261450,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": 470000,
+          "usd": null
+        }
+      },
+      "bahiaBlanca": {
+        "trigo": {
+          "pesos": null,
+          "usd": 205
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": 180
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": 307
+        }
+      },
+      "quequen": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": 307.8
+        }
+      },
+      "darsena": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      }
+    }
+  },
+  {
+    "fecha": "2026-06-23",
+    "precios": {
+      "rosario": {
+        "trigo": {
+          "pesos": 299800,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": 263250,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": 475000,
+          "usd": null
+        }
+      },
+      "bahiaBlanca": {
+        "trigo": {
+          "pesos": null,
+          "usd": 205
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": 180
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": 305
+        }
+      },
+      "quequen": {
+        "trigo": {
+          "pesos": null,
+          "usd": 205
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": 180
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": 304.8
+        }
+      },
+      "darsena": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      }
+    }
+  },
+  {
+    "fecha": "2026-06-24",
+    "precios": {
+      "rosario": {
+        "trigo": {
+          "pesos": 294000,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": 264000,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": 475000,
+          "usd": null
+        }
+      },
+      "bahiaBlanca": {
+        "trigo": {
+          "pesos": null,
+          "usd": 205
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": 180
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      },
+      "quequen": {
+        "trigo": {
+          "pesos": null,
+          "usd": 205
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 380
+        },
+        "soja": {
+          "pesos": null,
+          "usd": 309.4
+        }
+      },
+      "darsena": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      }
+    }
+  },
+  {
+    "fecha": "2026-06-25",
+    "precios": {
+      "rosario": {
+        "trigo": {
+          "pesos": 293600,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": 264240,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": 480000,
+          "usd": null
+        }
+      },
+      "bahiaBlanca": {
+        "trigo": {
+          "pesos": null,
+          "usd": 205
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": 180
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 400
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      },
+      "quequen": {
+        "trigo": {
+          "pesos": null,
+          "usd": 205
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 400
+        },
+        "soja": {
+          "pesos": null,
+          "usd": 307.7
+        }
+      },
+      "darsena": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      }
+    }
+  },
+  {
+    "fecha": "2026-06-26",
+    "precios": {
+      "rosario": {
+        "trigo": {
+          "pesos": 293600,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": 265700,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": 475000,
+          "usd": null
+        }
+      },
+      "bahiaBlanca": {
+        "trigo": {
+          "pesos": 205,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": 180,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": 400,
+          "usd": null
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      },
+      "quequen": {
+        "trigo": {
+          "pesos": null,
+          "usd": 205
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": 400
+        },
+        "soja": {
+          "pesos": null,
+          "usd": 306.3
+        }
+      },
+      "darsena": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      }
+    }
+  }
+]
