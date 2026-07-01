@@ -107,6 +107,48 @@ if (!html) {
     return { grano: label, categorias: cats };
   });
 
+  // --- Rosario AL DÍA desde la Cámara de Rosario (cac.bcr), que va más rápido ---
+  async function getCacRosario() {
+    const U = "https://cac.bcr.com.ar/es/precios-de-pizarra";
+    const api = KEY ? `https://api.scraperapi.com/?api_key=${KEY}&url=${encodeURIComponent(U)}` : U;
+    const MAP = { trigo: "trigo", maiz: "maiz", girasol: "girasol", soja: "soja" };
+    for (let i = 1; i <= 5; i++) {
+      try {
+        const r = await fetch(api, { headers: { "User-Agent": UA } });
+        if (r.ok) {
+          const h = await r.text();
+          if (h.includes("board-prices")) {
+            const $r = cheerio.load(h);
+            const mF = h.match(/Pizarra del d[ií]a\s*(\d{2})\/(\d{2})\/(\d{4})/i);
+            const fechaR = mF ? `${mF[3]}-${mF[2]}-${mF[1]}` : null;
+            const ros = {};
+            $r(".board-prices .board").each((_, b) => {
+              const key = MAP[norm($r(b).find("h3").first().text())];
+              if (!key) return;
+              ros[key] = {
+                pesos: num($r(b).find(".price").first().text()),
+                usd: num($r(b).find(".bottom .cell").first().text().replace(/US\$/i, "")),
+              };
+            });
+            if (Object.keys(ros).length >= 3) return { fecha: fechaR, ros };
+          }
+        } else console.log("cac.bcr intento", i, "->", r.status);
+      } catch (e) {
+        console.log("cac.bcr intento", i, "falló:", e.message);
+      }
+      await new Promise((s) => setTimeout(s, 4000));
+    }
+    return null;
+  }
+  const cac = await getCacRosario();
+  if (cac) {
+    for (const g of ["trigo", "maiz", "girasol", "soja"]) if (cac.ros[g]) precios.rosario[g] = cac.ros[g];
+    if (cac.fecha) fecha = cac.fecha;
+    console.log("cac.bcr OK — Rosario al día:", cac.fecha);
+  } else {
+    console.log("cac.bcr no respondió — Rosario queda de Buenos Aires");
+  }
+
   fs.writeFileSync("pizarra.json", JSON.stringify({ fecha, fuente: FUENTE, automatica: true, precios }, null, 2));
   fs.writeFileSync("mercados.json", JSON.stringify({ fecha, flash, dolar: dolarCamara }, null, 2));
 
