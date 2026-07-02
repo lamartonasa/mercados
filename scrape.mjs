@@ -30,8 +30,10 @@ const viaScraper = (u, geo) =>
 
 const norm = (t) => t.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().trim();
 // Formato Cámara: "el último separador es el decimal".
+// "(E)" = valor ESTIMADO (no es cotización real) -> se trata como s/c (null).
 function num(raw) {
-  const c = (raw || "").replace(/\(e\)/gi, "").replace(/[^0-9.,]/g, "");
+  if (/\(e\)/i.test(raw || "")) return null;
+  const c = (raw || "").replace(/[^0-9.,]/g, "");
   if (!c || /s\/c/i.test(raw)) return null;
   const ld = c.lastIndexOf("."), lc = c.lastIndexOf(",");
   const n = ld === -1 && lc === -1 ? c : lc > ld ? c.replace(/\./g, "").replace(",", ".") : c.replace(/,/g, "");
