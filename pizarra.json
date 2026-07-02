@@ -6,19 +6,19 @@
     "rosario": {
       "trigo": {
         "pesos": 292390,
-        "usd": null
+        "usd": 198.5
       },
       "maiz": {
         "pesos": 264400,
-        "usd": null
+        "usd": 179.5
       },
       "girasol": {
         "pesos": null,
-        "usd": null
+        "usd": 450
       },
       "soja": {
         "pesos": 475000,
-        "usd": null
+        "usd": 322.47
       }
     },
     "bahiaBlanca": {
