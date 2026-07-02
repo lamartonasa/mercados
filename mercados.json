@@ -15,9 +15,9 @@
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "30/06",
-              "varDir": "up",
-              "precio": "299.000"
+              "posicion": "01/07",
+              "varDir": "down",
+              "precio": "297.000"
             }
           ]
         },
@@ -81,9 +81,9 @@
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "30/06",
-              "varDir": "up",
-              "precio": "268.000"
+              "posicion": "01/07",
+              "varDir": "down",
+              "precio": "265.000"
             }
           ]
         },
@@ -147,9 +147,9 @@
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "30/06",
-              "varDir": "down",
-              "precio": "475.000"
+              "posicion": "01/07",
+              "varDir": "up",
+              "precio": "475.900"
             }
           ]
         },
@@ -213,7 +213,7 @@
             },
             {
               "mercado": "Disponible US$/t",
-              "posicion": "30/06",
+              "posicion": "01/07",
               "varDir": "igual",
               "precio": "655.000"
             }
