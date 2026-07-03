@@ -86,7 +86,12 @@
   },
   {
     "fecha": "2026-07-02",
-    "cabezas": 2600,
+    "cabezas": 2599,
+    "indice": 4536.292
+  },
+  {
+    "fecha": "2026-07-03",
+    "cabezas": 6297,
     "indice": null
   }
 ]
