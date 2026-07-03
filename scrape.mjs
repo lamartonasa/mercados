@@ -15,8 +15,10 @@ import fs from "fs";
 const MODE = (process.argv[2] || "all").toLowerCase();
 const doPizarra = MODE === "all" || MODE === "pizarra";
 const doDolar = MODE === "all" || MODE === "dolar";
-const doHacienda = true;
-const doArr = true;
+// Hacienda + arrendamientos van con el dólar (a la tarde, con el cierre) para no
+// gastar llamadas de más en las corridas de pizarra de la mañana.
+const doHacienda = MODE === "all" || MODE === "dolar";
+const doArr = MODE === "all" || MODE === "dolar";
 
 const URL = "https://www.bolsadecereales.com/camara-arbitral";
 const UA =

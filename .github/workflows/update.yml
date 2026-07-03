@@ -1,10 +1,16 @@
 name: Actualizar precios
 on:
   schedule:
-    - cron: "45 13 * * 1-5"   # 10:45 ART - pizarra (apenas cierra Rosario 10:40) + hacienda + arrend.
-    - cron: "30 14 * * 1-5"   # 11:30 ART - respaldo por si GitHub se atrasa
-    - cron: "30 18 * * 1-5"   # 15:30 ART - dolar (+ hacienda + arrend.)
-    - cron: "30 19 * * 1-5"   # 16:30 ART - dolar (cierre de divisas)
+    # Pizarra (Rosario cierra ~10:40 ART). Varios horarios a minutos "raros":
+    # GitHub atrasa/saltea mucho las tareas programadas, así hay más chances de
+    # que al menos una se dispare cada mañana.
+    - cron: "47 13 * * 1-5"   # 10:47 ART
+    - cron: "23 14 * * 1-5"   # 11:23 ART
+    - cron: "7 15 * * 1-5"    # 12:07 ART
+    - cron: "3 16 * * 1-5"    # 13:03 ART
+    # Dólar + hacienda + arrendamientos a la tarde (con el cierre).
+    - cron: "33 18 * * 1-5"   # 15:33 ART
+    - cron: "33 19 * * 1-5"   # 16:33 ART
   workflow_dispatch: {}
   push:
     branches: [main]
@@ -27,7 +33,7 @@ jobs:
             echo "mode=all" >> "$GITHUB_OUTPUT"
           else
             case "$S" in
-              "30 18 "*|"30 19 "*) echo "mode=dolar" >> "$GITHUB_OUTPUT" ;;
+              "33 18 "*|"33 19 "*) echo "mode=dolar" >> "$GITHUB_OUTPUT" ;;
               *) echo "mode=pizarra" >> "$GITHUB_OUTPUT" ;;
             esac
           fi
