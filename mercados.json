@@ -8,10 +8,10 @@
           "titulo": "Disponibles",
           "filas": [
             {
-              "mercado": "Cámara-Ros. $/t",
-              "posicion": "29/06",
-              "varDir": "up",
-              "precio": "294.500"
+              "mercado": "Rosario $/t",
+              "posicion": "02/07",
+              "varDir": "down",
+              "precio": "249.970"
             },
             {
               "mercado": "A3 Mercados",
@@ -26,9 +26,9 @@
           "filas": [
             {
               "mercado": "Rosario Jul US$/t",
-              "posicion": "29/06",
-              "varDir": "down",
-              "precio": "200,5"
+              "posicion": "02/07",
+              "varDir": "up",
+              "precio": "202,5"
             }
           ]
         },
@@ -37,9 +37,9 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "29/06",
+              "posicion": "02/07",
               "varDir": "down",
-              "precio": "231"
+              "precio": "227"
             }
           ]
         },
@@ -48,9 +48,9 @@
           "filas": [
             {
               "mercado": "Jul. US$/t",
-              "posicion": "25/06",
-              "varDir": "up",
-              "precio": "227,97"
+              "posicion": "02/07",
+              "varDir": "down",
+              "precio": "216,98"
             }
           ]
         },
@@ -58,10 +58,10 @@
           "titulo": "FAS MAGyP",
           "filas": [
             {
-              "mercado": "Valor de Mercado $/t PIE",
-              "posicion": "29/06",
+              "mercado": "Valor de Mercado",
+              "posicion": "02/07",
               "varDir": "down",
-              "precio": "292.891"
+              "precio": "288.671"
             }
           ]
         }
@@ -74,10 +74,10 @@
           "titulo": "Disponibles",
           "filas": [
             {
-              "mercado": "Cámara-Ros. $/t",
-              "posicion": "29/06",
+              "mercado": "Rosario $/t",
+              "posicion": "02/07",
               "varDir": "up",
-              "precio": "264.900"
+              "precio": "265.660"
             },
             {
               "mercado": "A3 Mercados",
@@ -91,10 +91,10 @@
           "titulo": "Futuros A3 Mercados",
           "filas": [
             {
-              "mercado": "Rosario Jul US$/t",
-              "posicion": "29/06",
-              "varDir": "down",
-              "precio": "177,6"
+              "mercado": "Rosario Ago US$/t",
+              "posicion": "02/07",
+              "varDir": "up",
+              "precio": "180"
             }
           ]
         },
@@ -103,9 +103,9 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "29/06",
-              "varDir": "down",
-              "precio": "197"
+              "posicion": "02/07",
+              "varDir": "up",
+              "precio": "203"
             }
           ]
         },
@@ -114,9 +114,9 @@
           "filas": [
             {
               "mercado": "Jul. US$/t",
-              "posicion": "25/06",
+              "posicion": "02/07",
               "varDir": "up",
-              "precio": "163,29"
+              "precio": "167,32"
             }
           ]
         },
@@ -124,10 +124,10 @@
           "titulo": "FAS MAGyP",
           "filas": [
             {
-              "mercado": "Valor de Mercado $/t PIE",
-              "posicion": "29/06",
-              "varDir": "down",
-              "precio": "245.814"
+              "mercado": "Valor de Mercado",
+              "posicion": "02/07",
+              "varDir": "up",
+              "precio": "254.654"
             }
           ]
         }
@@ -140,10 +140,10 @@
           "titulo": "Disponibles",
           "filas": [
             {
-              "mercado": "Cámara-Ros. $/t",
-              "posicion": "29/06",
-              "varDir": "down",
-              "precio": "475.000"
+              "mercado": "Rosario $/t",
+              "posicion": "02/07",
+              "varDir": "up",
+              "precio": "476.000"
             },
             {
               "mercado": "A3 Mercados",
@@ -158,9 +158,9 @@
           "filas": [
             {
               "mercado": "Rosario Jul US$/t",
-              "posicion": "29/06",
+              "posicion": "02/07",
               "varDir": "down",
-              "precio": "325,8"
+              "precio": "323,1"
             }
           ]
         },
@@ -169,9 +169,9 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "29/06",
-              "varDir": "down",
-              "precio": "414"
+              "posicion": "02/07",
+              "varDir": "up",
+              "precio": "430"
             }
           ]
         },
@@ -180,9 +180,9 @@
           "filas": [
             {
               "mercado": "Jul. US$/t",
-              "posicion": "25/06",
+              "posicion": "02/07",
               "varDir": "up",
-              "precio": "414,24"
+              "precio": "415,86"
             }
           ]
         },
@@ -190,10 +190,10 @@
           "titulo": "FAS MAGyP",
           "filas": [
             {
-              "mercado": "Valor de Mercado $/t PIE",
-              "posicion": "29/06",
-              "varDir": "down",
-              "precio": "486.620"
+              "mercado": "Valor de Mercado",
+              "posicion": "02/07",
+              "varDir": "up",
+              "precio": "487.523"
             }
           ]
         }
@@ -245,10 +245,10 @@
           "titulo": "FAS MAGyP",
           "filas": [
             {
-              "mercado": "Valor de Mercado $/t PIE",
-              "posicion": "29/06",
+              "mercado": "Valor de Mercado",
+              "posicion": "02/07",
               "varDir": "up",
-              "precio": "589.377"
+              "precio": "589.810"
             }
           ]
         }
