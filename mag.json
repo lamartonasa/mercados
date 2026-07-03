@@ -2,7 +2,7 @@
   "fecha": "02/07/2026",
   "provisorio": false,
   "inmag": 4469.372,
-  "igmag": 4146.91,
+  "igmag": 4154.042,
   "totalCabezas": 2595,
   "categorias": [
     {
@@ -65,7 +65,7 @@
       "cat": "VAQUILLONAS EyB M.270/390",
       "min": 4200,
       "max": 5420,
-      "prom": 4974.396,
+      "prom": 4974.394,
       "cabezas": 319
     },
     {
@@ -86,14 +86,14 @@
       "cat": "VACAS Buenas",
       "min": 2120,
       "max": 4450,
-      "prom": 3018.459,
+      "prom": 3025.972,
       "cabezas": 630
     },
     {
       "cat": "VACAS Regulares",
       "min": 2400,
       "max": 2870,
-      "prom": 2658.669,
+      "prom": 2715.222,
       "cabezas": 33
     },
     {

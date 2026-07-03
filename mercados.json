@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-07-01",
+  "fecha": "2026-07-02",
   "flash": [
     {
       "grano": "Trigo",
@@ -15,9 +15,9 @@
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "01/07",
-              "varDir": "down",
-              "precio": "297.000"
+              "posicion": "02/07",
+              "varDir": "up",
+              "precio": "300.000"
             }
           ]
         },
@@ -81,9 +81,9 @@
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "01/07",
-              "varDir": "down",
-              "precio": "265.000"
+              "posicion": "02/07",
+              "varDir": "up",
+              "precio": "265.500"
             }
           ]
         },
@@ -147,9 +147,9 @@
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "01/07",
+              "posicion": "02/07",
               "varDir": "up",
-              "precio": "475.900"
+              "precio": "477.000"
             }
           ]
         },
@@ -213,7 +213,7 @@
             },
             {
               "mercado": "Disponible US$/t",
-              "posicion": "01/07",
+              "posicion": "02/07",
               "varDir": "igual",
               "precio": "655.000"
             }
@@ -256,7 +256,7 @@
     }
   ],
   "dolar": {
-    "compra": 1473,
-    "venta": 1482
+    "compra": 1479,
+    "venta": 1488
   }
 }
