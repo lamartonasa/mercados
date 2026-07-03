@@ -1,9 +1,9 @@
 {
   "fecha": "03/07/2026",
   "provisorio": false,
-  "inmag": 4176.891,
-  "igmag": 3504.708,
-  "totalCabezas": 6268,
+  "inmag": 4176.758,
+  "igmag": 3504.667,
+  "totalCabezas": 6273,
   "categorias": [
     {
       "cat": "NOVILLOS Mest.EyB 431/460",
@@ -37,8 +37,8 @@
       "cat": "NOVILLOS Regulares Liv.",
       "min": 3100,
       "max": 4350,
-      "prom": 3666.047,
-      "cabezas": 135
+      "prom": 3668.543,
+      "cabezas": 136
     },
     {
       "cat": "NOVILLOS Regulares Pes.",
@@ -72,8 +72,8 @@
       "cat": "NOVILLITOS Regulares",
       "min": 4000,
       "max": 4600,
-      "prom": 4189.221,
-      "cabezas": 100
+      "prom": 4195.028,
+      "cabezas": 102
     },
     {
       "cat": "VAQUILLONAS EyB M.270/390",
@@ -100,7 +100,7 @@
       "cat": "VACAS Buenas",
       "min": 2200,
       "max": 4100,
-      "prom": 2970.44,
+      "prom": 2968.958,
       "cabezas": 753
     },
     {
@@ -114,15 +114,15 @@
       "cat": "VACAS Conserva Buena",
       "min": 1900,
       "max": 2600,
-      "prom": 2247.714,
-      "cabezas": 308
+      "prom": 2247.581,
+      "cabezas": 309
     },
     {
       "cat": "VACAS Conserva Inferior",
       "min": 1600,
       "max": 2400,
-      "prom": 1945.8,
-      "cabezas": 145
+      "prom": 1947.176,
+      "cabezas": 146
     },
     {
       "cat": "TOROS Buenos",
