@@ -107,14 +107,14 @@
       "cat": "VACAS Regulares",
       "min": 1900,
       "max": 3400,
-      "prom": 2506.095,
+      "prom": 2505.349,
       "cabezas": 1292
     },
     {
       "cat": "VACAS Conserva Buena",
       "min": 1900,
       "max": 2600,
-      "prom": 2247.581,
+      "prom": 2249.066,
       "cabezas": 309
     },
     {
