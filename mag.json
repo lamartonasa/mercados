@@ -1,16 +1,16 @@
 {
   "fecha": "07/07/2026",
   "provisorio": false,
-  "inmag": 4165.135,
-  "igmag": 3688.934,
-  "totalCabezas": 9023,
+  "inmag": 4164.095,
+  "igmag": 3688.175,
+  "totalCabezas": 9029,
   "categorias": [
     {
       "cat": "NOVILLOS Mest.EyB 431/460",
       "min": 3700,
       "max": 4700,
-      "prom": 4442.838,
-      "cabezas": 397
+      "prom": 4448.184,
+      "cabezas": 383
     },
     {
       "cat": "NOVILLOS Mest.EyB 461/490",
@@ -58,29 +58,29 @@
       "cat": "NOVILLITOS EyB M. 300/390",
       "min": 4100,
       "max": 5500,
-      "prom": 5002.122,
-      "cabezas": 790
+      "prom": 5000.827,
+      "cabezas": 780
     },
     {
       "cat": "NOVILLITOS EyB P. 391/430",
       "min": 3500,
-      "max": 5000,
-      "prom": 4603.563,
-      "cabezas": 966
+      "max": 5100,
+      "prom": 4603.578,
+      "cabezas": 990
     },
     {
       "cat": "NOVILLITOS Regulares",
       "min": 3250,
       "max": 4400,
-      "prom": 3914.192,
-      "cabezas": 209
+      "prom": 3910.474,
+      "cabezas": 211
     },
     {
       "cat": "VAQUILLONAS EyB M.270/390",
       "min": 2500,
       "max": 5500,
       "prom": 4748.088,
-      "cabezas": 1131
+      "cabezas": 1130
     },
     {
       "cat": "VAQUILLONAS EyB P.391/430",
@@ -93,8 +93,8 @@
       "cat": "VAQUILLONAS Regulares",
       "min": 2800,
       "max": 4800,
-      "prom": 3586.282,
-      "cabezas": 175
+      "prom": 3582.495,
+      "cabezas": 176
     },
     {
       "cat": "VACAS Buenas",
@@ -107,15 +107,15 @@
       "cat": "VACAS Regulares",
       "min": 1800,
       "max": 4070,
-      "prom": 2681.269,
-      "cabezas": 1496
+      "prom": 2680.724,
+      "cabezas": 1497
     },
     {
       "cat": "VACAS Conserva Buena",
       "min": 1600,
       "max": 3000,
-      "prom": 2279.459,
-      "cabezas": 452
+      "prom": 2278.672,
+      "cabezas": 454
     },
     {
       "cat": "VACAS Conserva Inferior",
@@ -135,8 +135,8 @@
       "cat": "TOROS Regulares",
       "min": 2200,
       "max": 3000,
-      "prom": 2416.011,
-      "cabezas": 132
+      "prom": 2414.683,
+      "cabezas": 133
     },
     {
       "cat": "MEJ EyB",
