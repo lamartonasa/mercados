@@ -1255,15 +1255,15 @@
       "bahiaBlanca": {
         "trigo": {
           "pesos": null,
-          "usd": 200
+          "usd": null
         },
         "maiz": {
           "pesos": null,
-          "usd": 182
+          "usd": null
         },
         "girasol": {
           "pesos": null,
-          "usd": 400
+          "usd": null
         },
         "soja": {
           "pesos": null,
@@ -1281,11 +1281,11 @@
         },
         "girasol": {
           "pesos": null,
-          "usd": 400
+          "usd": null
         },
         "soja": {
           "pesos": null,
-          "usd": 311.5
+          "usd": null
         }
       },
       "darsena": {
