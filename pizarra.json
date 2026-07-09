@@ -42,11 +42,11 @@
     "quequen": {
       "trigo": {
         "pesos": null,
-        "usd": null
+        "usd": 200
       },
       "maiz": {
         "pesos": null,
-        "usd": null
+        "usd": 178
       },
       "girasol": {
         "pesos": null,
@@ -54,7 +54,7 @@
       },
       "soja": {
         "pesos": null,
-        "usd": 311.5
+        "usd": 310
       }
     },
     "darsena": {
