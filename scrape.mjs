@@ -12,6 +12,18 @@
 import * as cheerio from "cheerio";
 import fs from "fs";
 
+// Sábado y domingo los mercados no publican nada nuevo (ni la Cámara, ni el
+// BNA, ni el MAG): no tiene sentido gastar créditos de ScraperAPI ese día,
+// incluso si algo llegara a disparar esta corrida (el cron de Vercel ya sólo
+// llama de lunes a viernes, pero esto es un freno extra por si acaso).
+const hoyArg = new Date(
+  new Date().toLocaleString("en-US", { timeZone: "America/Argentina/Buenos_Aires" })
+);
+if (hoyArg.getDay() === 0 || hoyArg.getDay() === 6) {
+  console.log("Fin de semana en Argentina: no hay datos nuevos, no se ejecuta el scraping.");
+  process.exit(0);
+}
+
 const MODE = (process.argv[2] || "all").toLowerCase();
 const doPizarra = MODE === "all" || MODE === "pizarra";
 const doDolar = MODE === "all" || MODE === "dolar";
