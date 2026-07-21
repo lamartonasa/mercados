@@ -68,6 +68,27 @@ const ddmmyyyy = (d) =>
 const PLAZA = { rosario: "rosario", "bahia blanca": "bahiaBlanca", quequen: "quequen", darsena: "darsena" };
 const GRANO = { trigo: "trigo", maiz: "maiz", girasol: "girasol", soja: "soja" };
 
+/** Prueba un pedido directo (gratis) antes de gastar créditos de ScraperAPI.
+ *  Sirve para fuentes que sólo bloquean IPs de hosting específicas (como
+ *  Vercel) pero no necesariamente al runner de GitHub Actions. */
+async function fetchDirectoOProxy(url, esValido, tag, intentos = 2) {
+  for (let i = 1; i <= intentos; i++) {
+    try {
+      const r = await fetch(url, { headers: { "User-Agent": UA } });
+      if (r.ok) {
+        const h = Buffer.from(await r.arrayBuffer()).toString("latin1");
+        if (esValido(h)) return h;
+        console.log(tag, "intento", i, "-> 200 pero sin datos válidos");
+      } else {
+        console.log(tag, "intento", i, "->", r.status);
+      }
+    } catch (e) {
+      console.log(tag, "intento", i, "falló:", e.message);
+    }
+  }
+  return null;
+}
+
 async function traerHtml(geo) {
   const tag = geo ? "Cámara AR" : "Cámara";
   for (let intento = 1; intento <= 4; intento++) {
@@ -303,12 +324,18 @@ if (doHacienda) {
   }
   async function fetchMag(qs) {
     const u = qs ? `${MAGBASE}?${qs}` : MAGBASE;
+    const esValido = (h) => h.includes("CATEGORIA") || h.includes("Totales");
+    // El MAG bloqueaba a Vercel, pero no necesariamente al runner de GitHub
+    // Actions: probamos primero directo (gratis) y sólo si falla recurrimos
+    // a ScraperAPI (gasta créditos).
+    const directo = await fetchDirectoOProxy(u, esValido, "MAG directo");
+    if (directo) return directo;
     for (let i = 1; i <= 4; i++) {
       try {
         const r = await fetch(viaScraper(u), { headers: { "User-Agent": UA } });
         if (r.ok) {
           const h = Buffer.from(await r.arrayBuffer()).toString("latin1");
-          if (h.includes("CATEGORIA") || h.includes("Totales")) return h;
+          if (esValido(h)) return h;
         } else console.log("MAG intento", i, "->", r.status);
       } catch (e) { console.log("MAG intento", i, "falló:", e.message); }
       await new Promise((s) => setTimeout(s, 4000));
@@ -348,12 +375,16 @@ if (doArr) {
   ini.setDate(ini.getDate() - 35); // ~35 días => ~15-18 operativos
   const qs = `txtFechaIni=${encodeURIComponent(ddmmyyyy(ini))}&txtFechaFin=${encodeURIComponent(ddmmyyyy(hoy))}`;
   async function fetchArr() {
+    const u = `${ARRBASE}?${qs}`;
+    const esValido = (h) => /arrendamiento/i.test(h);
+    const directo = await fetchDirectoOProxy(u, esValido, "Arr directo");
+    if (directo) return directo;
     for (let i = 1; i <= 4; i++) {
       try {
-        const r = await fetch(viaScraper(`${ARRBASE}?${qs}`), { headers: { "User-Agent": UA } });
+        const r = await fetch(viaScraper(u), { headers: { "User-Agent": UA } });
         if (r.ok) {
           const h = Buffer.from(await r.arrayBuffer()).toString("latin1");
-          if (/arrendamiento/i.test(h)) return h;
+          if (esValido(h)) return h;
         } else console.log("Arr intento", i, "->", r.status);
       } catch (e) { console.log("Arr intento", i, "falló:", e.message); }
       await new Promise((s) => setTimeout(s, 4000));
