@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-07-20",
+  "fecha": "2026-07-29",
   "flash": [
     {
       "grano": "Trigo",
@@ -9,15 +9,15 @@
           "filas": [
             {
               "mercado": "Rosario $/t",
-              "posicion": "20/07",
-              "varDir": "down",
-              "precio": "293.800"
+              "posicion": "29/07",
+              "varDir": "up",
+              "precio": "305.245"
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "20/07",
-              "varDir": "up",
-              "precio": "314.000"
+              "posicion": "29/07",
+              "varDir": "igual",
+              "precio": "318.000"
             }
           ]
         },
@@ -26,9 +26,9 @@
           "filas": [
             {
               "mercado": "Rosario Jul US$/t",
-              "posicion": "29/06",
-              "varDir": "down",
-              "precio": "200,5"
+              "posicion": "29/07",
+              "varDir": "up",
+              "precio": "219,5"
             }
           ]
         },
@@ -37,9 +37,9 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "20/07",
+              "posicion": "29/07",
               "varDir": "up",
-              "precio": "232"
+              "precio": "237"
             }
           ]
         },
@@ -47,10 +47,10 @@
           "titulo": "CBOT",
           "filas": [
             {
-              "mercado": "Jul. US$/t",
-              "posicion": "20/07",
-              "varDir": "down",
-              "precio": "0"
+              "mercado": "Sep. US$/t",
+              "posicion": "29/07",
+              "varDir": "up",
+              "precio": "242,79"
             }
           ]
         },
@@ -59,9 +59,9 @@
           "filas": [
             {
               "mercado": "Valor de Mercado",
-              "posicion": "20/07",
+              "posicion": "29/07",
               "varDir": "up",
-              "precio": "294.061"
+              "precio": "303.839"
             }
           ]
         }
@@ -75,14 +75,14 @@
           "filas": [
             {
               "mercado": "Rosario $/t",
-              "posicion": "20/07",
+              "posicion": "29/07",
               "varDir": "up",
-              "precio": "271.765"
+              "precio": "282.500"
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "20/07",
-              "varDir": "up",
+              "posicion": "29/07",
+              "varDir": "igual",
               "precio": "285.000"
             }
           ]
@@ -92,9 +92,9 @@
           "filas": [
             {
               "mercado": "Rosario Ago US$/t",
-              "posicion": "20/07",
+              "posicion": "29/07",
               "varDir": "up",
-              "precio": "188"
+              "precio": "190"
             }
           ]
         },
@@ -103,9 +103,9 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "20/07",
+              "posicion": "29/07",
               "varDir": "up",
-              "precio": "210"
+              "precio": "208"
             }
           ]
         },
@@ -113,10 +113,10 @@
           "titulo": "CBOT",
           "filas": [
             {
-              "mercado": "Jul. US$/t",
-              "posicion": "20/07",
-              "varDir": "down",
-              "precio": "0"
+              "mercado": "Sep. US$/t",
+              "posicion": "29/07",
+              "varDir": "up",
+              "precio": "176,76"
             }
           ]
         },
@@ -125,9 +125,9 @@
           "filas": [
             {
               "mercado": "Valor de Mercado",
-              "posicion": "20/07",
+              "posicion": "29/07",
               "varDir": "up",
-              "precio": "262.561"
+              "precio": "262.619"
             }
           ]
         }
@@ -141,15 +141,15 @@
           "filas": [
             {
               "mercado": "Rosario $/t",
-              "posicion": "20/07",
+              "posicion": "29/07",
               "varDir": "up",
-              "precio": "495.000"
+              "precio": "505.500"
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "20/07",
-              "varDir": "up",
-              "precio": "500.000"
+              "posicion": "29/07",
+              "varDir": "down",
+              "precio": "504.000"
             }
           ]
         },
@@ -157,10 +157,10 @@
           "titulo": "Futuros A3 Mercados",
           "filas": [
             {
-              "mercado": "Rosario Jul US$/t",
-              "posicion": "29/06",
-              "varDir": "down",
-              "precio": "325,8"
+              "mercado": "Rosario Ago US$/t",
+              "posicion": "29/07",
+              "varDir": "up",
+              "precio": "339,5"
             }
           ]
         },
@@ -169,9 +169,9 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "20/07",
+              "posicion": "29/07",
               "varDir": "up",
-              "precio": "462"
+              "precio": "452"
             }
           ]
         },
@@ -179,10 +179,10 @@
           "titulo": "CBOT",
           "filas": [
             {
-              "mercado": "Jul. US$/t",
-              "posicion": "20/07",
-              "varDir": "down",
-              "precio": "0"
+              "mercado": "Ago. US$/t",
+              "posicion": "29/07",
+              "varDir": "up",
+              "precio": "432,85"
             }
           ]
         },
@@ -191,9 +191,9 @@
           "filas": [
             {
               "mercado": "Valor de Mercado",
-              "posicion": "20/07",
+              "posicion": "29/07",
               "varDir": "up",
-              "precio": "505.897"
+              "precio": "508.271"
             }
           ]
         }
@@ -213,9 +213,9 @@
             },
             {
               "mercado": "Disponible US$/t",
-              "posicion": "20/07",
+              "posicion": "29/07",
               "varDir": "up",
-              "precio": "660.000"
+              "precio": "685.000"
             }
           ]
         },
@@ -235,9 +235,9 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "29/06",
+              "posicion": "29/07",
               "varDir": "up",
-              "precio": "492"
+              "precio": "507"
             }
           ]
         },
@@ -246,9 +246,9 @@
           "filas": [
             {
               "mercado": "Valor de Mercado",
-              "posicion": "20/07",
+              "posicion": "29/07",
               "varDir": "up",
-              "precio": "600.767"
+              "precio": "610.800"
             }
           ]
         }
@@ -256,7 +256,7 @@
     }
   ],
   "dolar": {
-    "compra": 1472,
-    "venta": 1481
+    "compra": 1487,
+    "venta": 1496
   }
 }
