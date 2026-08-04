@@ -5,10 +5,12 @@
 //  - mag.json (resumen de hacienda del Mercado Agroganadero — último día cerrado)
 //  - arrendamiento.json (índice de arrendamientos rurales del MAG — historial)
 //
-// Modo (argumento): "pizarra" | "dolar" | "all" (por defecto "all").
-//  - pizarra: pizarra + flash (Cámara)   -> se corre a la mañana (10:45), 1 vez
-//  - dolar:   dólar BNA                   -> se corre 15:30 y 16:30
-//  - hacienda + arrendamientos: SIEMPRE (son baratos y así toman el cierre)
+// Modo (argumento): "pizarra" | "dolar" | "hacienda" | "all" (por defecto "all").
+//  - pizarra:  pizarra + flash (Cámara)          -> a la mañana (10:45), 1 vez
+//  - dolar:    dólar BNA + hacienda + arrend.     -> a la tarde (16:15)
+//  - hacienda: sólo hacienda + arrend. (gratis, sin ScraperAPI) -> segunda
+//              pasada más tarde (19:00), por si el MAG todavía no había
+//              cerrado el cuadro del día en la corrida de las 16:15
 import * as cheerio from "cheerio";
 import fs from "fs";
 
@@ -27,10 +29,10 @@ if (hoyArg.getDay() === 0 || hoyArg.getDay() === 6) {
 const MODE = (process.argv[2] || "all").toLowerCase();
 const doPizarra = MODE === "all" || MODE === "pizarra";
 const doDolar = MODE === "all" || MODE === "dolar";
-// Hacienda + arrendamientos van con el dólar (a la tarde, con el cierre) para no
-// gastar llamadas de más en las corridas de pizarra de la mañana.
-const doHacienda = MODE === "all" || MODE === "dolar";
-const doArr = MODE === "all" || MODE === "dolar";
+// Hacienda + arrendamientos van con el dólar (a la tarde, con el cierre) y
+// también en su propio modo "hacienda" (segunda pasada tardía, gratis).
+const doHacienda = MODE === "all" || MODE === "dolar" || MODE === "hacienda";
+const doArr = MODE === "all" || MODE === "dolar" || MODE === "hacienda";
 
 const URL = "https://www.bolsadecereales.com/camara-arbitral";
 const UA =
