@@ -255,10 +255,14 @@ if (doPizarra) {
 }
 
 // ===== Dólar Banco Nación — Cotización Divisas (valor del día) =====
+// El proxy simple es inconsistente esquivando el bloqueo del BNA (a veces sí,
+// a veces no); "render=true" (ejecuta el JS) lo esquiva de forma confiable.
 async function getBnaDolar() {
   for (let i = 1; i <= 5; i++) {
     try {
-      const r = await fetch(viaScraper("https://www.bna.com.ar/Personas"), { headers: { "User-Agent": UA } });
+      const r = await fetch(viaScraper("https://www.bna.com.ar/Personas", false, true), {
+        headers: { "User-Agent": UA },
+      });
       if (r.ok) {
         const $ = cheerio.load(await r.text());
         const cont = $("#divisas");
