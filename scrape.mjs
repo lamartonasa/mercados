@@ -6,11 +6,15 @@
 //  - arrendamiento.json (índice de arrendamientos rurales del MAG — historial)
 //
 // Modo (argumento): "pizarra" | "dolar" | "hacienda" | "all" (por defecto "all").
-//  - pizarra:  pizarra + flash (Cámara)          -> a la mañana (10:45), 1 vez
-//  - dolar:    dólar BNA + hacienda + arrend.     -> a la tarde (16:15)
-//  - hacienda: sólo hacienda + arrend. (gratis, sin ScraperAPI) -> segunda
-//              pasada más tarde (19:00), por si el MAG todavía no había
-//              cerrado el cuadro del día en la corrida de las 16:15
+//  - pizarra:  pizarra + flash (Cámara)                    -> mañana (10:45)
+//  - dolar:    dólar BNA + hacienda + arrend.               -> tarde (15:30),
+//              apenas después de que el BNA publica (~15:15)
+//  - hacienda: dólar + hacienda + arrend., segunda pasada   -> noche (19:00),
+//              red de seguridad por si el MAG cerró tarde o el BNA falló
+// El BNA bloquea los pedidos que no ejecutan su JS: la lectura usa
+// "render=true" (ScraperAPI con navegador), que tarda ~30-40 s -por eso
+// SÓLO se hace acá (GitHub Actions, sin límite de tiempo), nunca desde la
+// web (que tiene 60 s de presupuesto por página).
 import * as cheerio from "cheerio";
 import fs from "fs";
 
