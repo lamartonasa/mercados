@@ -1,8 +1,8 @@
 {
   "fecha": "04/08/2026",
   "provisorio": false,
-  "inmag": 4376.241,
-  "igmag": 4064.687,
+  "inmag": 4376.943,
+  "igmag": 4060.456,
   "totalCabezas": 6300,
   "categorias": [
     {
@@ -37,7 +37,7 @@
       "cat": "NOVILLOS Regulares Liv.",
       "min": 3800,
       "max": 4200,
-      "prom": 4039.412,
+      "prom": 4057.364,
       "cabezas": 53
     },
     {
@@ -99,8 +99,8 @@
     {
       "cat": "VACAS Buenas",
       "min": 2200,
-      "max": 5550,
-      "prom": 3408.301,
+      "max": 4100,
+      "prom": 3383.309,
       "cabezas": 947
     },
     {
