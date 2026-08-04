@@ -32,9 +32,9 @@ if (hoyArg.getDay() === 0 || hoyArg.getDay() === 6) {
 
 const MODE = (process.argv[2] || "all").toLowerCase();
 const doPizarra = MODE === "all" || MODE === "pizarra";
-const doDolar = MODE === "all" || MODE === "dolar";
-// Hacienda + arrendamientos van con el dólar (a la tarde, con el cierre) y
-// también en su propio modo "hacienda" (segunda pasada tardía, gratis).
+// Dólar, hacienda y arrendamientos corren en el modo "dolar" (tarde) y de
+// nuevo en "hacienda" (noche, segunda pasada de seguridad para los tres).
+const doDolar = MODE === "all" || MODE === "dolar" || MODE === "hacienda";
 const doHacienda = MODE === "all" || MODE === "dolar" || MODE === "hacienda";
 const doArr = MODE === "all" || MODE === "dolar" || MODE === "hacienda";
 
@@ -43,9 +43,9 @@ const UA =
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36";
 const FUENTE = "Cámara Arbitral de Cereales — Bolsa de Cereales de Buenos Aires";
 const KEY = process.env.SCRAPER_API_KEY;
-const viaScraper = (u, geo) =>
+const viaScraper = (u, geo, render) =>
   KEY
-    ? `https://api.scraperapi.com/?api_key=${KEY}${geo ? "&country_code=ar" : ""}&url=${encodeURIComponent(u)}`
+    ? `https://api.scraperapi.com/?api_key=${KEY}${geo ? "&country_code=ar" : ""}${render ? "&render=true" : ""}&url=${encodeURIComponent(u)}`
     : u;
 
 const norm = (t) => t.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase().trim();
