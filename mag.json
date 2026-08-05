@@ -2,7 +2,7 @@
   "fecha": "05/08/2026",
   "provisorio": false,
   "inmag": 4443.714,
-  "igmag": 3916.809,
+  "igmag": 3916.861,
   "totalCabezas": 5472,
   "categorias": [
     {
@@ -65,7 +65,7 @@
       "cat": "NOVILLITOS EyB P. 391/430",
       "min": 4000,
       "max": 5300,
-      "prom": 4780.867,
+      "prom": 4780.802,
       "cabezas": 489
     },
     {
