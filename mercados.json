@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-08-10",
+  "fecha": "2026-08-12",
   "flash": [
     {
       "grano": "Trigo",
@@ -9,15 +9,15 @@
           "filas": [
             {
               "mercado": "Rosario $/t",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
-              "precio": "320.200"
+              "precio": "318.520"
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "10/08",
-              "varDir": "igual",
-              "precio": "323.500"
+              "posicion": "12/08",
+              "varDir": "up",
+              "precio": "325.000"
             }
           ]
         },
@@ -26,9 +26,9 @@
           "filas": [
             {
               "mercado": "Rosario Sep US$/t",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
-              "precio": "221"
+              "precio": "223,5"
             }
           ]
         },
@@ -37,7 +37,7 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
               "precio": "240"
             }
@@ -48,9 +48,9 @@
           "filas": [
             {
               "mercado": "Sep. US$/t",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
-              "precio": "235,35"
+              "precio": "239,85"
             }
           ]
         },
@@ -59,9 +59,9 @@
           "filas": [
             {
               "mercado": "Valor de Mercado",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
-              "precio": "307.178"
+              "precio": "307.100"
             }
           ]
         }
@@ -75,14 +75,14 @@
           "filas": [
             {
               "mercado": "Rosario $/t",
-              "posicion": "10/08",
-              "varDir": "up",
-              "precio": "277.800"
+              "posicion": "12/08",
+              "varDir": "down",
+              "precio": "263.700"
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "10/08",
-              "varDir": "down",
+              "posicion": "12/08",
+              "varDir": "up",
               "precio": "274.000"
             }
           ]
@@ -92,9 +92,9 @@
           "filas": [
             {
               "mercado": "Rosario Sep US$/t",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
-              "precio": "186,2"
+              "precio": "190,9"
             }
           ]
         },
@@ -103,9 +103,9 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
-              "precio": "206"
+              "precio": "213"
             }
           ]
         },
@@ -114,9 +114,9 @@
           "filas": [
             {
               "mercado": "Sep. US$/t",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
-              "precio": "172,53"
+              "precio": "179,91"
             }
           ]
         },
@@ -125,9 +125,9 @@
           "filas": [
             {
               "mercado": "Valor de Mercado",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
-              "precio": "260.512"
+              "precio": "268.467"
             }
           ]
         }
@@ -141,14 +141,14 @@
           "filas": [
             {
               "mercado": "Rosario $/t",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
-              "precio": "510.000"
+              "precio": "500.000"
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "10/08",
-              "varDir": "down",
+              "posicion": "12/08",
+              "varDir": "up",
               "precio": "508.000"
             }
           ]
@@ -158,9 +158,9 @@
           "filas": [
             {
               "mercado": "Rosario Sep US$/t",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
-              "precio": "342,4"
+              "precio": "344"
             }
           ]
         },
@@ -169,9 +169,9 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
-              "precio": "453"
+              "precio": "455"
             }
           ]
         },
@@ -180,9 +180,9 @@
           "filas": [
             {
               "mercado": "Ago. US$/t",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
-              "precio": "425,41"
+              "precio": "427,98"
             }
           ]
         },
@@ -191,9 +191,9 @@
           "filas": [
             {
               "mercado": "Valor de Mercado",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
-              "precio": "510.504"
+              "precio": "511.427"
             }
           ]
         }
@@ -206,16 +206,16 @@
           "titulo": "Disponibles",
           "filas": [
             {
-              "mercado": "Cámara-Ros. $/t",
-              "posicion": "",
+              "mercado": "Rosario $/t",
+              "posicion": "12/08",
               "varDir": "igual",
-              "precio": "s/c"
+              "precio": "743.250"
             },
             {
               "mercado": "Disponible US$/t",
-              "posicion": "10/08",
-              "varDir": "up",
-              "precio": "730.000"
+              "posicion": "12/08",
+              "varDir": "igual",
+              "precio": "735.000"
             }
           ]
         },
@@ -235,7 +235,7 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
               "precio": "532"
             }
@@ -246,9 +246,9 @@
           "filas": [
             {
               "mercado": "Valor de Mercado",
-              "posicion": "10/08",
+              "posicion": "12/08",
               "varDir": "up",
-              "precio": "620.481"
+              "precio": "623.498"
             }
           ]
         }
@@ -256,7 +256,7 @@
     }
   ],
   "dolar": {
-    "compra": 1486.5,
-    "venta": 1495.5
+    "compra": 1482.5,
+    "venta": 1491.5
   }
 }
