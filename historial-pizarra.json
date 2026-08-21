@@ -3026,7 +3026,8 @@
       "bahiaBlanca": {
         "trigo": {
           "pesos": null,
-          "usd": null
+          "usd": null,
+          "estimadoUsd": 240
         },
         "maiz": {
           "pesos": null,
@@ -3038,7 +3039,8 @@
         },
         "soja": {
           "pesos": null,
-          "usd": null
+          "usd": null,
+          "estimadoPesos": 520000
         }
       },
       "quequen": {
