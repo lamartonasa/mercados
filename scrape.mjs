@@ -355,11 +355,12 @@ if (doHacienda) {
   let magData = null;
   const hoy = new Date();
   for (let back = 0; back <= 7 && !magData; back++) {
+    const d0 = new Date(hoy);
+    d0.setDate(d0.getDate() - back);
+    if (d0.getDay() === 4) continue; // el MAG no publica los jueves: ni intentarlo
     let qs = "";
     if (back > 0) {
-      const d = new Date(hoy);
-      d.setDate(d.getDate() - back);
-      const f = encodeURIComponent(ddmmyyyy(d));
+      const f = encodeURIComponent(ddmmyyyy(d0));
       qs = `txtFechaIni=${f}&txtFechaFin=${f}`;
     }
     const h = await fetchMag(qs);
