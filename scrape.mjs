@@ -159,6 +159,46 @@ if (doPizarra) {
   }
   const cac = await getCacRosario();
 
+  // Cámara Arbitral de Cereales de Bahía Blanca: además del precio firme
+  // ("orientativo", que ya viene de la Bolsa arriba), publica un precio
+  // "estimativo" para cuando no hubo cotización real ese día -en cualquiera
+  // de las 4 plazas, no sólo Bahía Blanca. Lo usamos sólo como respaldo,
+  // nunca pisa un precio firme.
+  async function getCacbbEstimativos() {
+    const PLAZA_ID = { bahia: "bahiaBlanca", rosario: "rosario", darsena: "darsena", quequen: "quequen" };
+    try {
+      const r = await fetch("https://cacbb.com.ar/precioscamara.html", { headers: { "User-Agent": UA } });
+      if (!r.ok) {
+        console.log("cacbb intento ->", r.status);
+        return null;
+      }
+      const $c = cheerio.load(await r.text());
+      const out = {};
+      for (const [id, plaza] of Object.entries(PLAZA_ID)) {
+        const pane = $c(`#${id}`);
+        if (!pane.length) continue;
+        const tablaEst = pane.find("table").filter((_, t) => /ESTIMATIVOS/i.test($c(t).text())).first();
+        if (!tablaEst.length) continue;
+        tablaEst.find("tr").each((_, tr) => {
+          const tds = $c(tr).find("td");
+          if (tds.length < 3) return;
+          const g = GRANO[norm($c(tds[0]).text()).replace(/\s+duro$/, "")];
+          if (!g) return;
+          const pesos = num($c(tds[1]).text());
+          const usd = num($c(tds[2]).text());
+          if (pesos == null && usd == null) return;
+          out[plaza] = out[plaza] || {};
+          out[plaza][g] = { pesos, usd };
+        });
+      }
+      return Object.keys(out).length ? out : null;
+    } catch (e) {
+      console.log("cacbb falló:", e.message);
+      return null;
+    }
+  }
+  const cacbbEst = await getCacbbEstimativos();
+
   if (!html && !cac) {
     console.log("No se pudo leer ni la Bolsa ni cac.bcr — se mantienen los datos previos.");
   } else {
@@ -231,6 +271,24 @@ if (doPizarra) {
       console.log("cac.bcr OK — Rosario al día:", cac.fecha);
     } else {
       console.log("cac.bcr no respondió — Rosario queda de la Bolsa");
+    }
+
+    // Estimativos de CAC Bahía Blanca: sólo rellenan celdas sin cotización firme.
+    if (cacbbEst) {
+      let aplicados = 0;
+      for (const plaza of Object.keys(cacbbEst)) {
+        for (const g of Object.keys(cacbbEst[plaza])) {
+          const c = precios[plaza]?.[g];
+          if (!c || c.pesos != null || c.usd != null) continue; // ya hay precio firme
+          const { pesos, usd } = cacbbEst[plaza][g];
+          if (pesos != null) c.estimadoPesos = pesos;
+          if (usd != null) c.estimadoUsd = usd;
+          if (pesos != null || usd != null) aplicados++;
+        }
+      }
+      console.log("cacbb estimativos aplicados:", aplicados);
+    } else {
+      console.log("cacbb no respondió — sin estimativos hoy");
     }
 
     const hayDato = Object.values(precios).some((p) => Object.values(p).some((c) => c.pesos != null || c.usd != null));
