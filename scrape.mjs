@@ -60,6 +60,16 @@ function num(raw) {
   const v = Number(n);
   return Number.isFinite(v) ? v : null;
 }
+/** Separa un valor firme de uno "(E)" estimado dentro del mismo texto (como
+ *  publica cac.bcr para Rosario: "S/C (E) $737.550,00"). */
+function splitFirmeEstimado(raw) {
+  const t = raw || "";
+  // Entre "(E)" y el número puede haber un símbolo de moneda ("$" o "US$").
+  const m = t.match(/\(e\)\s*(?:us)?\$?\s*([\d.,]+)/i);
+  const firme = num(t.replace(/\(e\).*$/i, ""));
+  const estimado = m ? num(m[1]) : null;
+  return { firme, estimado };
+}
 // Formato MAG: coma = decimal; punto = miles.
 function magNum(raw) {
   const clean = (raw || "").replace(/[^0-9.,]/g, "");
@@ -142,10 +152,17 @@ if (doPizarra) {
               if (!mg) return;
               const key = MAP[norm(mg[1])];
               if (!key) return;
-              ros[key] = {
-                pesos: num($r(b).find(".price").first().text()),
-                usd: num($r(b).find(".bottom .cell").first().text().replace(/US\$/i, "")),
-              };
+              // cac.bcr a veces publica "(E)" (estimado) en vez de un precio
+              // firme -p. ej. Girasol "S/C (E) $737.550,00". Guardamos ambos.
+              const peso = splitFirmeEstimado($r(b).find(".price").first().text());
+              const usdV = splitFirmeEstimado(
+                $r(b).find(".bottom .cell").first().text().replace(/US\$/i, "")
+              );
+              ros[key] = { pesos: peso.firme, usd: usdV.firme };
+              if (peso.firme == null && usdV.firme == null) {
+                if (peso.estimado != null) ros[key].estimadoPesos = peso.estimado;
+                if (usdV.estimado != null) ros[key].estimadoUsd = usdV.estimado;
+              }
             });
             if (Object.keys(ros).length >= 3) return { fecha: fechaR, ros };
           }
