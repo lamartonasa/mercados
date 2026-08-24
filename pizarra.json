@@ -14,7 +14,9 @@
       },
       "girasol": {
         "pesos": null,
-        "usd": null
+        "usd": null,
+        "estimadoPesos": 737550,
+        "estimadoUsd": 495
       },
       "soja": {
         "pesos": 521500,
@@ -29,11 +31,11 @@
       },
       "maiz": {
         "pesos": null,
-        "usd": null
+        "usd": 195
       },
       "girasol": {
         "pesos": null,
-        "usd": null
+        "usd": 430
       },
       "soja": {
         "pesos": null,
@@ -48,15 +50,15 @@
       },
       "maiz": {
         "pesos": null,
-        "usd": null
+        "usd": 195
       },
       "girasol": {
         "pesos": null,
-        "usd": null
+        "usd": 430
       },
       "soja": {
         "pesos": null,
-        "usd": null
+        "usd": 350
       }
     },
     "darsena": {
