@@ -2,8 +2,8 @@
   "fecha": "25/08/2026",
   "provisorio": false,
   "inmag": 4349.189,
-  "igmag": 3872.678,
-  "totalCabezas": 6947,
+  "igmag": 3872.219,
+  "totalCabezas": 6949,
   "categorias": [
     {
       "cat": "NOVILLOS Mest.EyB 431/460",
@@ -107,8 +107,8 @@
       "cat": "VACAS Regulares",
       "min": 2000,
       "max": 3650,
-      "prom": 2906.703,
-      "cabezas": 1004
+      "prom": 2905.705,
+      "cabezas": 1006
     },
     {
       "cat": "VACAS Conserva Buena",
