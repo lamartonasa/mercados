@@ -2,8 +2,8 @@
   "fecha": "26/08/2026",
   "provisorio": false,
   "inmag": 4113.125,
-  "igmag": 3724.762,
-  "totalCabezas": 5075,
+  "igmag": 3724.569,
+  "totalCabezas": 5076,
   "categorias": [
     {
       "cat": "NOVILLOS Mest.EyB 431/460",
@@ -121,8 +121,8 @@
       "cat": "VACAS Conserva Inferior",
       "min": 1900,
       "max": 2600,
-      "prom": 2333.171,
-      "cabezas": 71
+      "prom": 2333.84,
+      "cabezas": 72
     },
     {
       "cat": "TOROS Buenos",
