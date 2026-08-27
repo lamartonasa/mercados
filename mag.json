@@ -2,8 +2,8 @@
   "fecha": "26/08/2026",
   "provisorio": false,
   "inmag": 4113.125,
-  "igmag": 3724.569,
-  "totalCabezas": 5076,
+  "igmag": 3723.138,
+  "totalCabezas": 5059,
   "categorias": [
     {
       "cat": "NOVILLOS Mest.EyB 431/460",
@@ -58,8 +58,8 @@
       "cat": "NOVILLITOS EyB M. 300/390",
       "min": 4000,
       "max": 5300,
-      "prom": 4924.59,
-      "cabezas": 435
+      "prom": 4936.784,
+      "cabezas": 423
     },
     {
       "cat": "NOVILLITOS EyB P. 391/430",
@@ -128,8 +128,8 @@
       "cat": "TOROS Buenos",
       "min": 3000,
       "max": 3800,
-      "prom": 3395.953,
-      "cabezas": 182
+      "prom": 3385.691,
+      "cabezas": 177
     },
     {
       "cat": "TOROS Regulares",
