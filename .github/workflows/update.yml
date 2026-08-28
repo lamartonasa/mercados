@@ -1,15 +1,15 @@
 name: Actualizar precios
 on:
   # Lo dispara el Cron de Vercel (confiable) vía workflow_dispatch, con el modo:
-  #   pizarra  -> a la mañana (después de que cierra Rosario ~10:40)
-  #   dolar    -> a la tarde (después del cierre de divisas ~15hs) + hacienda + arrend.
-  #   hacienda -> segunda pasada tardía, sólo hacienda+arrend. (por si el MAG
-  #               todavía no había cerrado el cuadro en la corrida de "dolar")
+  #   pizarra       -> lun a vie, 11:00 (Cámara Arbitral)
+  #   dolar         -> lun a vie, 15:30 (BNA)
+  #   hacienda      -> lun,mar,mié,vie, 11:00 (MAG resumen del día)
+  #   arrendamiento -> lun,mar,mié,vie, 13:00 (MAG índice de arrendamientos)
   # (Ya NO usamos el schedule de GitHub: es impredecible.)
   workflow_dispatch:
     inputs:
       mode:
-        description: "pizarra | dolar | hacienda | all"
+        description: "pizarra | dolar | hacienda | arrendamiento | all"
         default: "all"
   push:
     branches: [main]

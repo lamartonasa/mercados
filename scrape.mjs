@@ -5,12 +5,14 @@
 //  - mag.json (resumen de hacienda del Mercado Agroganadero — último día cerrado)
 //  - arrendamiento.json (índice de arrendamientos rurales del MAG — historial)
 //
-// Modo (argumento): "pizarra" | "dolar" | "hacienda" | "all" (por defecto "all").
-//  - pizarra:  pizarra + flash (Cámara)                    -> mañana (10:45)
-//  - dolar:    dólar BNA + hacienda + arrend.               -> tarde (15:30),
-//              apenas después de que el BNA publica (~15:15)
-//  - hacienda: dólar + hacienda + arrend., segunda pasada   -> noche (19:00),
-//              red de seguridad por si el MAG cerró tarde o el BNA falló
+// Modo (argumento): "pizarra" | "dolar" | "hacienda" | "arrendamiento" | "all".
+// Cada uno es independiente, con su propio horario (definido en el cron de
+// Vercel, no acá):
+//  - pizarra:       Cámara Arbitral (pizarra + flash)   -> lun a vie, 11:00
+//  - dolar:         Cotización Divisas del BNA          -> lun a vie, 15:30
+//  - hacienda:       MAG, resumen de hacienda del día    -> lun,mar,mié,vie 11:00
+//  - arrendamiento: MAG, índice de arrendamientos       -> lun,mar,mié,vie 13:00
+// (el MAG no publica los jueves, por eso hacienda/arrendamiento lo saltean)
 // El BNA bloquea los pedidos que no ejecutan su JS: la lectura usa
 // "render=true" (ScraperAPI con navegador), que tarda ~30-40 s -por eso
 // SÓLO se hace acá (GitHub Actions, sin límite de tiempo), nunca desde la
@@ -32,11 +34,9 @@ if (hoyArg.getDay() === 0 || hoyArg.getDay() === 6) {
 
 const MODE = (process.argv[2] || "all").toLowerCase();
 const doPizarra = MODE === "all" || MODE === "pizarra";
-// Dólar, hacienda y arrendamientos corren en el modo "dolar" (tarde) y de
-// nuevo en "hacienda" (noche, segunda pasada de seguridad para los tres).
-const doDolar = MODE === "all" || MODE === "dolar" || MODE === "hacienda";
-const doHacienda = MODE === "all" || MODE === "dolar" || MODE === "hacienda";
-const doArr = MODE === "all" || MODE === "dolar" || MODE === "hacienda";
+const doDolar = MODE === "all" || MODE === "dolar";
+const doHacienda = MODE === "all" || MODE === "hacienda";
+const doArr = MODE === "all" || MODE === "arrendamiento";
 
 const URL = "https://www.bolsadecereales.com/camara-arbitral";
 const UA =
