@@ -485,7 +485,12 @@ if (doArr) {
       const c = $(tr).find("td").map((__, x) => $(x).text().replace(/\s+/g, " ").trim()).get();
       const m = (c[0] || "").match(/(\d{2})\/(\d{2})\/(\d{4})/);
       if (m && c.length >= 4 && !/totales/i.test(c[0])) {
-        nuevos.push({ fecha: `${m[3]}-${m[2]}-${m[1]}`, cabezas: magNum(c[1]), indice: magNum(c[3]) });
+        nuevos.push({
+          fecha: `${m[3]}-${m[2]}-${m[1]}`,
+          cabezas: magNum(c[1]),
+          importe: magNum(c[2]),
+          indice: magNum(c[3]),
+        });
       }
     });
     if (nuevos.length) {
