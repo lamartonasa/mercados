@@ -137,16 +137,19 @@
   {
     "fecha": "2026-07-24",
     "cabezas": 5557,
+    "importe": 9455542000,
     "indice": 4450.397
   },
   {
     "fecha": "2026-07-28",
     "cabezas": 6870,
+    "importe": 11948159700,
     "indice": 4493.928
   },
   {
     "fecha": "2026-07-29",
     "cabezas": 5496,
+    "importe": 8924606900,
     "indice": 4404.428
   },
   {
@@ -157,16 +160,19 @@
   {
     "fecha": "2026-07-31",
     "cabezas": 5994,
+    "importe": 10074788700,
     "indice": 4352.836
   },
   {
     "fecha": "2026-08-04",
     "cabezas": 6317,
+    "importe": 11084415000,
     "indice": 4408.788
   },
   {
     "fecha": "2026-08-05",
     "cabezas": 5483,
+    "importe": 9659136350,
     "indice": 4515.653
   },
   {
@@ -177,51 +183,61 @@
   {
     "fecha": "2026-08-07",
     "cabezas": 3568,
+    "importe": 6177941650,
     "indice": 4362.923
   },
   {
     "fecha": "2026-08-11",
     "cabezas": 8233,
+    "importe": 14294369850,
     "indice": 4436.756
   },
   {
     "fecha": "2026-08-12",
     "cabezas": 6895,
+    "importe": 11122049050,
     "indice": 4235.331
   },
   {
     "fecha": "2026-08-14",
     "cabezas": 5956,
+    "importe": 9862104950,
     "indice": 4318.873
   },
   {
     "fecha": "2026-08-18",
     "cabezas": 4490,
+    "importe": 7543970350,
     "indice": 4372.814
   },
   {
     "fecha": "2026-08-19",
     "cabezas": 5460,
+    "importe": 8846482350,
     "indice": 4287.103
   },
   {
     "fecha": "2026-08-21",
     "cabezas": 5889,
+    "importe": 9693735850,
     "indice": 4372.88
   },
   {
     "fecha": "2026-08-25",
     "cabezas": 6964,
+    "importe": 11649190500,
     "indice": 4425.103
   },
   {
     "fecha": "2026-08-26",
     "cabezas": 5105,
+    "importe": 8421566850,
     "indice": 4244.673
   },
   {
     "fecha": "2026-08-28",
     "cabezas": 3398,
+    "importe": 5634897300,
     "indice": 4519.701
   }
 ]
