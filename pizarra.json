@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-09-03",
+  "fecha": "2026-09-04",
   "fuente": "Cámara Arbitral de Cereales — Bolsa de Cereales de Buenos Aires",
   "automatica": true,
   "precios": {
@@ -9,8 +9,8 @@
         "usd": 233.49
       },
       "maiz": {
-        "pesos": 285560,
-        "usd": 190.5
+        "pesos": 289000,
+        "usd": 192.8
       },
       "girasol": {
         "pesos": null,
@@ -30,7 +30,8 @@
       },
       "maiz": {
         "pesos": null,
-        "usd": 195
+        "usd": null,
+        "estimadoUsd": 200
       },
       "girasol": {
         "pesos": null,
@@ -45,7 +46,7 @@
     "quequen": {
       "trigo": {
         "pesos": null,
-        "usd": 240
+        "usd": null
       },
       "maiz": {
         "pesos": null,
