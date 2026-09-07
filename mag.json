@@ -2,7 +2,7 @@
   "fecha": "04/09/2026",
   "provisorio": false,
   "inmag": 4035.452,
-  "igmag": 3712.18,
+  "igmag": 3713.252,
   "totalCabezas": 4492,
   "categorias": [
     {
@@ -65,8 +65,8 @@
       "cat": "NOVILLITOS EyB M. 300/390",
       "min": 4300,
       "max": 5200,
-      "prom": 4850.476,
-      "cabezas": 397
+      "prom": 4840.276,
+      "cabezas": 405
     },
     {
       "cat": "NOVILLITOS EyB P. 391/430",
@@ -84,16 +84,16 @@
     },
     {
       "cat": "VAQUILLONAS EyB M.270/390",
-      "min": 2900,
+      "min": 3800,
       "max": 5200,
-      "prom": 4569.699,
+      "prom": 4585.209,
       "cabezas": 818
     },
     {
       "cat": "VAQUILLONAS EyB P.391/430",
       "min": 3800,
       "max": 4700,
-      "prom": 4167.209,
+      "prom": 4177.904,
       "cabezas": 232
     },
     {
@@ -107,7 +107,7 @@
       "cat": "VACAS Buenas",
       "min": 2400,
       "max": 4300,
-      "prom": 3232.1,
+      "prom": 3226.082,
       "cabezas": 729
     },
     {
@@ -121,7 +121,7 @@
       "cat": "VACAS Conserva Buena",
       "min": 2200,
       "max": 2900,
-      "prom": 2513.3,
+      "prom": 2499.938,
       "cabezas": 161
     },
     {
@@ -149,8 +149,8 @@
       "cat": "MEJ EyB",
       "min": 3000,
       "max": 4400,
-      "prom": 3915.065,
-      "cabezas": 72
+      "prom": 3882.132,
+      "cabezas": 64
     },
     {
       "cat": "MEJ Regulares",
