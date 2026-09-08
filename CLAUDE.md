@@ -19,6 +19,14 @@ siempre probar lectura directa primero, ScraperAPI es el respaldo, no el default
 Horarios (detalle completo en la Ficha técnica): pizarra y dólar corren lunes a viernes; hacienda
 y arrendamiento sólo lunes/martes/miércoles/viernes — el MAG no publica remate los jueves.
 
+**Hacienda corre dos veces por día** (11:00 y 14:00 ART, desde 08/09/2026): el remate del MAG no
+siempre cierra a la misma hora, y la lógica de `scrape.mjs` (busca el último cuadro cerrado,
+`!provisorio && categorias.length >= 5 && totalCabezas`) puede aceptar como "válido" el cuadro del
+día hábil anterior si el de hoy todavía no arrancó a publicarse — no compara la fecha encontrada
+contra la ya guardada. La segunda corrida es el paliativo (no un fix de la causa raíz); si se
+quiere corregir de raíz, hay que comparar `d.fecha` contra el `mag.json` existente antes de aceptar
+el resultado como bueno.
+
 ## Al commitear
 Si estás en un sandbox sin credenciales de GitHub, nunca intentes `git push` vos mismo: commitear
 y darle a la usuaria el comando exacto de push para que lo corra ella.
