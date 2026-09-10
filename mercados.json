@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-09-08",
+  "fecha": "2026-09-09",
   "flash": [
     {
       "grano": "Trigo",
@@ -9,15 +9,15 @@
           "filas": [
             {
               "mercado": "Rosario $/t",
-              "posicion": "08/09",
+              "posicion": "09/09",
               "varDir": "up",
-              "precio": "346.000"
+              "precio": "345.700"
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "08/09",
-              "varDir": "up",
-              "precio": "358.000"
+              "posicion": "09/09",
+              "varDir": "down",
+              "precio": "356.000"
             }
           ]
         },
@@ -26,9 +26,9 @@
           "filas": [
             {
               "mercado": "Rosario Sep US$/t",
-              "posicion": "08/09",
+              "posicion": "09/09",
               "varDir": "up",
-              "precio": "238"
+              "precio": "235"
             }
           ]
         },
@@ -37,9 +37,9 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "08/09",
+              "posicion": "09/09",
               "varDir": "up",
-              "precio": "262"
+              "precio": "263"
             }
           ]
         },
@@ -48,9 +48,9 @@
           "filas": [
             {
               "mercado": "Sep. US$/t",
-              "posicion": "08/09",
+              "posicion": "09/09",
               "varDir": "up",
-              "precio": "268,33"
+              "precio": "261,34"
             }
           ]
         },
@@ -58,10 +58,10 @@
           "titulo": "FAS MAGyP",
           "filas": [
             {
-              "mercado": "Valor de Mercado",
-              "posicion": "08/09",
-              "varDir": "up",
-              "precio": "341.679"
+              "mercado": "Valor de Mercado $/t PIE",
+              "posicion": "29/06",
+              "varDir": "down",
+              "precio": "292.891"
             }
           ]
         }
@@ -75,15 +75,15 @@
           "filas": [
             {
               "mercado": "Rosario $/t",
-              "posicion": "08/09",
+              "posicion": "09/09",
               "varDir": "up",
-              "precio": "293.000"
+              "precio": "293.100"
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "08/09",
-              "varDir": "igual",
-              "precio": "295.000"
+              "posicion": "09/09",
+              "varDir": "up",
+              "precio": "298.000"
             }
           ]
         },
@@ -92,9 +92,9 @@
           "filas": [
             {
               "mercado": "Rosario Sep US$/t",
-              "posicion": "08/09",
+              "posicion": "09/09",
               "varDir": "up",
-              "precio": "199"
+              "precio": "199,8"
             }
           ]
         },
@@ -103,7 +103,7 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "08/09",
+              "posicion": "09/09",
               "varDir": "up",
               "precio": "219"
             }
@@ -114,9 +114,9 @@
           "filas": [
             {
               "mercado": "Sep. US$/t",
-              "posicion": "08/09",
+              "posicion": "09/09",
               "varDir": "up",
-              "precio": "201,17"
+              "precio": "199,89"
             }
           ]
         },
@@ -124,10 +124,10 @@
           "titulo": "FAS MAGyP",
           "filas": [
             {
-              "mercado": "Valor de Mercado",
-              "posicion": "08/09",
-              "varDir": "up",
-              "precio": "289.565"
+              "mercado": "Valor de Mercado $/t PIE",
+              "posicion": "29/06",
+              "varDir": "down",
+              "precio": "245.814"
             }
           ]
         }
@@ -141,15 +141,15 @@
           "filas": [
             {
               "mercado": "Rosario $/t",
-              "posicion": "08/09",
+              "posicion": "09/09",
               "varDir": "up",
-              "precio": "560.000"
+              "precio": "556.000"
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "08/09",
-              "varDir": "igual",
-              "precio": "560.000"
+              "posicion": "09/09",
+              "varDir": "down",
+              "precio": "555.000"
             }
           ]
         },
@@ -158,9 +158,9 @@
           "filas": [
             {
               "mercado": "Rosario Sep US$/t",
-              "posicion": "08/09",
+              "posicion": "09/09",
               "varDir": "up",
-              "precio": "370"
+              "precio": "369,6"
             }
           ]
         },
@@ -169,9 +169,9 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "08/09",
+              "posicion": "09/09",
               "varDir": "up",
-              "precio": "510"
+              "precio": "507"
             }
           ]
         },
@@ -180,9 +180,9 @@
           "filas": [
             {
               "mercado": "Sep. US$/t",
-              "posicion": "08/09",
+              "posicion": "09/09",
               "varDir": "up",
-              "precio": "478,6"
+              "precio": "475,93"
             }
           ]
         },
@@ -190,10 +190,10 @@
           "titulo": "FAS MAGyP",
           "filas": [
             {
-              "mercado": "Valor de Mercado",
-              "posicion": "08/09",
-              "varDir": "up",
-              "precio": "558.405"
+              "mercado": "Valor de Mercado $/t PIE",
+              "posicion": "29/06",
+              "varDir": "down",
+              "precio": "486.620"
             }
           ]
         }
@@ -213,8 +213,8 @@
             },
             {
               "mercado": "Disponible US$/t",
-              "posicion": "08/09",
-              "varDir": "up",
+              "posicion": "09/09",
+              "varDir": "igual",
               "precio": "760.000"
             }
           ]
@@ -235,7 +235,7 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "08/09",
+              "posicion": "09/09",
               "varDir": "up",
               "precio": "573"
             }
@@ -245,10 +245,10 @@
           "titulo": "FAS MAGyP",
           "filas": [
             {
-              "mercado": "Valor de Mercado",
-              "posicion": "08/09",
+              "mercado": "Valor de Mercado $/t PIE",
+              "posicion": "29/06",
               "varDir": "up",
-              "precio": "616.805"
+              "precio": "589.377"
             }
           ]
         }
@@ -256,7 +256,7 @@
     }
   ],
   "dolar": {
-    "compra": 1503,
-    "venta": 1512
+    "compra": 1504.5,
+    "venta": 1513.5
   }
 }
