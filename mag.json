@@ -1,149 +1,149 @@
 {
-  "fecha": "09/09/2026",
+  "fecha": "11/09/2026",
   "provisorio": false,
-  "inmag": 4240.418,
-  "igmag": 3697.977,
-  "totalCabezas": 5578,
+  "inmag": 4332.077,
+  "igmag": 3756.486,
+  "totalCabezas": 5695,
   "categorias": [
     {
       "cat": "NOVILLOS Mest.EyB 431/460",
-      "min": 4000,
-      "max": 4650,
-      "prom": 4467.002,
-      "cabezas": 259
+      "min": 3400,
+      "max": 4800,
+      "prom": 4393.656,
+      "cabezas": 256
     },
     {
       "cat": "NOVILLOS Mest.EyB 461/490",
-      "min": 4050,
+      "min": 3000,
       "max": 4600,
-      "prom": 4395.94,
-      "cabezas": 146
+      "prom": 4403.765,
+      "cabezas": 245
     },
     {
       "cat": "NOVILLOS Mest.EyB 491/520",
-      "min": 4300,
+      "min": 4200,
       "max": 4500,
-      "prom": 4399.537,
-      "cabezas": 91
+      "prom": 4448.516,
+      "cabezas": 145
     },
     {
       "cat": "NOVILLOS Mest.EyB + 520",
-      "min": 3800,
-      "max": 4500,
-      "prom": 4198.706,
-      "cabezas": 71
-    },
-    {
-      "cat": "NOVILLOS Regulares Liv.",
       "min": 3700,
-      "max": 4000,
-      "prom": 3825.182,
-      "cabezas": 101
+      "max": 4550,
+      "prom": 4274.907,
+      "cabezas": 177
     },
     {
       "cat": "NOVILLOS Regulares Pes.",
-      "min": 3800,
-      "max": 4250,
-      "prom": 4029.842,
-      "cabezas": 44
-    },
-    {
-      "cat": "NOVILLOS Overos N.",
-      "min": 3000,
-      "max": 4200,
-      "prom": 3770.154,
-      "cabezas": 93
-    },
-    {
-      "cat": "NOVILLITOS EyB M. 300/390",
-      "min": 3700,
-      "max": 5300,
-      "prom": 4702.978,
-      "cabezas": 489
-    },
-    {
-      "cat": "NOVILLITOS EyB P. 391/430",
-      "min": 4150,
-      "max": 5000,
-      "prom": 4653.407,
-      "cabezas": 324
-    },
-    {
-      "cat": "NOVILLITOS Regulares",
-      "min": 3100,
-      "max": 4600,
-      "prom": 3980.39,
+      "min": 3200,
+      "max": 4140,
+      "prom": 3624.162,
       "cabezas": 36
     },
     {
+      "cat": "NOVILLOS Overos N.",
+      "min": 3700,
+      "max": 4370,
+      "prom": 4132.8,
+      "cabezas": 36
+    },
+    {
+      "cat": "NOVILLITOS EyB M. 300/390",
+      "min": 3300,
+      "max": 5200,
+      "prom": 4541.812,
+      "cabezas": 580
+    },
+    {
+      "cat": "NOVILLITOS EyB P. 391/430",
+      "min": 3300,
+      "max": 5000,
+      "prom": 4358.852,
+      "cabezas": 591
+    },
+    {
+      "cat": "NOVILLITOS Regulares",
+      "min": 3700,
+      "max": 4500,
+      "prom": 3831.118,
+      "cabezas": 94
+    },
+    {
       "cat": "VAQUILLONAS EyB M.270/390",
-      "min": 3600,
-      "max": 5050,
-      "prom": 4504.052,
-      "cabezas": 731
+      "min": 2800,
+      "max": 5000,
+      "prom": 4639.393,
+      "cabezas": 859
     },
     {
       "cat": "VAQUILLONAS EyB P.391/430",
-      "min": 3000,
-      "max": 4400,
-      "prom": 3768.193,
-      "cabezas": 382
+      "min": 2600,
+      "max": 4500,
+      "prom": 3855.518,
+      "cabezas": 228
     },
     {
       "cat": "VAQUILLONAS Regulares",
-      "min": 3700,
-      "max": 4700,
-      "prom": 3973.401,
-      "cabezas": 373
+      "min": 2600,
+      "max": 4800,
+      "prom": 3007.031,
+      "cabezas": 155
     },
     {
       "cat": "VACAS Buenas",
-      "min": 2650,
-      "max": 4350,
-      "prom": 3263.653,
-      "cabezas": 967
+      "min": 2400,
+      "max": 4000,
+      "prom": 3255.423,
+      "cabezas": 710
     },
     {
       "cat": "VACAS Regulares",
-      "min": 2100,
-      "max": 3650,
-      "prom": 2909.091,
-      "cabezas": 808
+      "min": 2000,
+      "max": 3800,
+      "prom": 2892.807,
+      "cabezas": 1009
     },
     {
       "cat": "VACAS Conserva Buena",
       "min": 2000,
-      "max": 3600,
-      "prom": 2579.891,
-      "cabezas": 263
+      "max": 2900,
+      "prom": 2364.053,
+      "cabezas": 141
     },
     {
       "cat": "VACAS Conserva Inferior",
-      "min": 2200,
-      "max": 2750,
-      "prom": 2464.909,
-      "cabezas": 105
+      "min": 2000,
+      "max": 2650,
+      "prom": 2087,
+      "cabezas": 36
     },
     {
       "cat": "TOROS Buenos",
       "min": 3000,
-      "max": 4000,
-      "prom": 3373.415,
-      "cabezas": 142
+      "max": 4200,
+      "prom": 3451.541,
+      "cabezas": 136
     },
     {
       "cat": "TOROS Regulares",
-      "min": 2800,
-      "max": 3400,
-      "prom": 2949.745,
-      "cabezas": 49
+      "min": 2700,
+      "max": 3500,
+      "prom": 2937.753,
+      "cabezas": 94
     },
     {
       "cat": "MEJ EyB",
-      "min": 3500,
-      "max": 4700,
-      "prom": 3816.266,
-      "cabezas": 104
+      "min": 3100,
+      "max": 4900,
+      "prom": 4216.35,
+      "cabezas": 156
+    },
+    {
+      "cat": "MEJ Regulares",
+      "min": 3000,
+      "max": 4720,
+      "prom": 3131.362,
+      "cabezas": 11
     }
   ],
   "fuente": "Mercado Agroganadero (MAG) — Cañuelas"
