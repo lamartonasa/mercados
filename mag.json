@@ -1,8 +1,8 @@
 {
   "fecha": "09/09/2026",
   "provisorio": false,
-  "inmag": 4237.244,
-  "igmag": 3697.487,
+  "inmag": 4240.418,
+  "igmag": 3697.977,
   "totalCabezas": 5578,
   "categorias": [
     {
@@ -51,7 +51,7 @@
       "cat": "NOVILLOS Overos N.",
       "min": 3000,
       "max": 4200,
-      "prom": 3739.588,
+      "prom": 3770.154,
       "cabezas": 93
     },
     {
