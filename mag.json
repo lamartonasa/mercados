@@ -1,9 +1,9 @@
 {
   "fecha": "15/09/2026",
   "provisorio": false,
-  "inmag": 4155.888,
-  "igmag": 3971.797,
-  "totalCabezas": 6475,
+  "inmag": 4146.54,
+  "igmag": 3968.496,
+  "totalCabezas": 6474,
   "categorias": [
     {
       "cat": "NOVILLOS Mest.EyB 431/460",
@@ -23,7 +23,7 @@
       "cat": "NOVILLOS Mest.EyB 491/520",
       "min": 3650,
       "max": 4600,
-      "prom": 4408.392,
+      "prom": 4346.385,
       "cabezas": 164
     },
     {
@@ -106,9 +106,9 @@
     {
       "cat": "VACAS Regulares",
       "min": 2100,
-      "max": 3750,
-      "prom": 3029.057,
-      "cabezas": 760
+      "max": 3700,
+      "prom": 3027.705,
+      "cabezas": 759
     },
     {
       "cat": "VACAS Conserva Buena",
@@ -126,9 +126,9 @@
     },
     {
       "cat": "TOROS Buenos",
-      "min": 3300,
+      "min": 2900,
       "max": 4000,
-      "prom": 3478.938,
+      "prom": 3432.962,
       "cabezas": 139
     },
     {
