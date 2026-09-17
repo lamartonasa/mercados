@@ -2,6 +2,7 @@
 //  - pizarra.json + mercados.json (pizarra, flash y dólar de la Cámara Arbitral)
 //  - historial-pizarra.json (pizarras de los últimos ~90 días)
 //  - dolar.json (Cotización Divisas del Banco Nación, valor del día)
+//  - historial-dolar.json (Cotización Divisas del BNA — historial de los últimos ~120 días)
 //  - mag.json (resumen de hacienda del Mercado Agroganadero — último día cerrado)
 //  - arrendamiento.json (índice de arrendamientos rurales del MAG — historial)
 //
@@ -366,7 +367,19 @@ if (doDolar) {
   const bna = await getBnaDolar();
   if (bna) {
     fs.writeFileSync("dolar.json", JSON.stringify(bna, null, 2));
-    console.log("Dólar BNA OK", bna.fecha, "|", bna.compra + "/" + bna.venta);
+    // Historial propio del BNA (antes la web completaba el gráfico con la
+    // serie "mayorista" de terceros, que no siempre coincide con la
+    // Cotización Divisas real -detectado 17/09/2026 comparando contra el
+    // historial oficial del BNA). Mismo patrón que historial-pizarra.json:
+    // un día cerrado se pisa sólo si vuelve a leerse ese mismo día.
+    let histD = [];
+    try { histD = JSON.parse(fs.readFileSync("historial-dolar.json", "utf-8")); } catch {}
+    histD = histD.filter((d) => d.fecha !== bna.fecha);
+    histD.push(bna);
+    histD.sort((a, b) => (a.fecha < b.fecha ? -1 : 1));
+    histD = histD.slice(-120);
+    fs.writeFileSync("historial-dolar.json", JSON.stringify(histD, null, 2));
+    console.log("Dólar BNA OK", bna.fecha, "|", bna.compra + "/" + bna.venta, "| historial", histD.length, "días");
   } else {
     console.log("Dólar BNA: no se pudo (se mantiene el previo)");
   }
