@@ -2,7 +2,7 @@
   "fecha": "18/09/2026",
   "provisorio": false,
   "inmag": 3978.812,
-  "igmag": 3694.814,
+  "igmag": 3702.236,
   "totalCabezas": 4882,
   "categorias": [
     {
@@ -100,7 +100,7 @@
       "cat": "VACAS Buenas",
       "min": 2700,
       "max": 3900,
-      "prom": 3279.905,
+      "prom": 3321.53,
       "cabezas": 780
     },
     {
