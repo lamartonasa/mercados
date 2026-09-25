@@ -2,7 +2,7 @@
   "fecha": "23/09/2026",
   "provisorio": false,
   "inmag": 4263.15,
-  "igmag": 3771.788,
+  "igmag": 3765.383,
   "totalCabezas": 4701,
   "categorias": [
     {
@@ -100,7 +100,7 @@
       "cat": "VACAS Buenas",
       "min": 2700,
       "max": 4000,
-      "prom": 3461.563,
+      "prom": 3462.19,
       "cabezas": 894
     },
     {
@@ -140,9 +140,9 @@
     },
     {
       "cat": "MEJ EyB",
-      "min": 4400,
+      "min": 3550,
       "max": 4800,
-      "prom": 4310.177,
+      "prom": 4021.266,
       "cabezas": 125
     },
     {
