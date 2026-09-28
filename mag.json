@@ -2,7 +2,7 @@
   "fecha": "25/09/2026",
   "provisorio": false,
   "inmag": 4068.212,
-  "igmag": 3661.186,
+  "igmag": 3661.165,
   "totalCabezas": 6305,
   "categorias": [
     {
@@ -93,7 +93,7 @@
       "cat": "VAQUILLONAS Regulares",
       "min": 3100,
       "max": 4750,
-      "prom": 3736.747,
+      "prom": 3735.905,
       "cabezas": 189
     },
     {
