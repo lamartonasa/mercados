@@ -2,7 +2,7 @@
   "fecha": "14/10/2026",
   "provisorio": false,
   "inmag": 4250.489,
-  "igmag": 3927.721,
+  "igmag": 3927.274,
   "totalCabezas": 6746,
   "categorias": [
     {
@@ -58,7 +58,7 @@
       "cat": "NOVILLITOS EyB M. 300/390",
       "min": 3700,
       "max": 5200,
-      "prom": 4636.453,
+      "prom": 4631.553,
       "cabezas": 739
     },
     {
