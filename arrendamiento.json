@@ -375,7 +375,13 @@
   {
     "fecha": "2026-10-16",
     "cabezas": 7411,
-    "importe": 12320525800,
-    "indice": 4241.302
+    "importe": 12316793800,
+    "indice": 4241.05
+  },
+  {
+    "fecha": "2026-10-19",
+    "cabezas": 38,
+    "importe": null,
+    "indice": null
   }
 ]
