@@ -383,5 +383,11 @@
     "cabezas": 38,
     "importe": null,
     "indice": null
+  },
+  {
+    "fecha": "2026-10-20",
+    "cabezas": 11102,
+    "importe": 18031159900,
+    "indice": 4131.535
   }
 ]
