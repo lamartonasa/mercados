@@ -2,8 +2,8 @@
   "fecha": "20/10/2026",
   "provisorio": false,
   "inmag": 4066.577,
-  "igmag": 3736.713,
-  "totalCabezas": 11009,
+  "igmag": 3736.246,
+  "totalCabezas": 11010,
   "categorias": [
     {
       "cat": "NOVILLOS Mest.EyB 431/460",
@@ -79,15 +79,15 @@
       "cat": "VAQUILLONAS EyB M.270/390",
       "min": 2500,
       "max": 5100,
-      "prom": 4333.876,
-      "cabezas": 1758
+      "prom": 4332.336,
+      "cabezas": 1790
     },
     {
       "cat": "VAQUILLONAS EyB P.391/430",
       "min": 2600,
       "max": 4300,
-      "prom": 3690.569,
-      "cabezas": 418
+      "prom": 3663.179,
+      "cabezas": 400
     },
     {
       "cat": "VAQUILLONAS Regulares",
@@ -99,15 +99,15 @@
     {
       "cat": "VACAS Buenas",
       "min": 2300,
-      "max": 4200,
-      "prom": 3223.406,
-      "cabezas": 1599
+      "max": 3900,
+      "prom": 3216.145,
+      "cabezas": 1586
     },
     {
       "cat": "VACAS Regulares",
       "min": 2000,
       "max": 3800,
-      "prom": 2968.995,
+      "prom": 2968.828,
       "cabezas": 1871
     },
     {
