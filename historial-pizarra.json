@@ -6948,5 +6948,86 @@
         }
       }
     }
+  },
+  {
+    "fecha": "2026-10-29",
+    "precios": {
+      "rosario": {
+        "trigo": {
+          "pesos": 311000,
+          "usd": 203.27
+        },
+        "maiz": {
+          "pesos": 275400,
+          "usd": 180
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null,
+          "estimadoPesos": 810900,
+          "estimadoUsd": 530
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null,
+          "estimadoPesos": 547000,
+          "estimadoUsd": 357.52
+        }
+      },
+      "bahiaBlanca": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      },
+      "quequen": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      },
+      "darsena": {
+        "trigo": {
+          "pesos": null,
+          "usd": null
+        },
+        "maiz": {
+          "pesos": null,
+          "usd": null
+        },
+        "girasol": {
+          "pesos": null,
+          "usd": null
+        },
+        "soja": {
+          "pesos": null,
+          "usd": null
+        }
+      }
+    }
   }
 ]
