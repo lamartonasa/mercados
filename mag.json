@@ -2,7 +2,7 @@
   "fecha": "28/10/2026",
   "provisorio": false,
   "inmag": 4095.652,
-  "igmag": 3595.753,
+  "igmag": 3596.888,
   "totalCabezas": 4659,
   "categorias": [
     {
@@ -114,7 +114,7 @@
       "cat": "VACAS Conserva Buena",
       "min": 2300,
       "max": 3000,
-      "prom": 2596.508,
+      "prom": 2594.239,
       "cabezas": 258
     },
     {
