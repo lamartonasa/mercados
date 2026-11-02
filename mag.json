@@ -2,7 +2,7 @@
   "fecha": "30/10/2026",
   "provisorio": false,
   "inmag": 4010.328,
-  "igmag": 3714.877,
+  "igmag": 3715.119,
   "totalCabezas": 3854,
   "categorias": [
     {
@@ -135,7 +135,7 @@
       "cat": "TOROS Regulares",
       "min": 3500,
       "max": 3500,
-      "prom": 3278.897,
+      "prom": 3283.382,
       "cabezas": 20
     },
     {
