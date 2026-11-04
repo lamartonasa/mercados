@@ -2,7 +2,7 @@
   "fecha": "03/11/2026",
   "provisorio": false,
   "inmag": 4170.716,
-  "igmag": 3930.537,
+  "igmag": 3930.484,
   "totalCabezas": 7760,
   "categorias": [
     {
@@ -107,7 +107,7 @@
       "cat": "VACAS Regulares",
       "min": 2100,
       "max": 3500,
-      "prom": 2853.638,
+      "prom": 2853.048,
       "cabezas": 602
     },
     {
