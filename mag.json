@@ -2,7 +2,7 @@
   "fecha": "04/11/2026",
   "provisorio": false,
   "inmag": 3945.861,
-  "igmag": 3685.003,
+  "igmag": 3684.725,
   "totalCabezas": 6974,
   "categorias": [
     {
@@ -79,15 +79,15 @@
       "cat": "VAQUILLONAS EyB M.270/390",
       "min": 3150,
       "max": 5150,
-      "prom": 4450.064,
-      "cabezas": 1293
+      "prom": 4446.8,
+      "cabezas": 1295
     },
     {
       "cat": "VAQUILLONAS EyB P.391/430",
       "min": 3350,
       "max": 4620,
-      "prom": 3957.753,
-      "cabezas": 288
+      "prom": 3965.522,
+      "cabezas": 286
     },
     {
       "cat": "VAQUILLONAS Regulares",
