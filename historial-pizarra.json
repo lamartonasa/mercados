@@ -7074,11 +7074,11 @@
       "bahiaBlanca": {
         "trigo": {
           "pesos": null,
-          "usd": null
+          "usd": 225
         },
         "maiz": {
           "pesos": null,
-          "usd": null
+          "usd": 178
         },
         "girasol": {
           "pesos": null,
@@ -7102,7 +7102,7 @@
         },
         "girasol": {
           "pesos": null,
-          "usd": null
+          "usd": 500
         },
         "soja": {
           "pesos": null,
