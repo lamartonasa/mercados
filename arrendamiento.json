@@ -473,5 +473,17 @@
     "cabezas": 3120,
     "importe": 4521124300,
     "indice": null
+  },
+  {
+    "fecha": "2026-11-12",
+    "cabezas": 2491,
+    "importe": 4831948750,
+    "indice": 4531.972
+  },
+  {
+    "fecha": "2026-11-13",
+    "cabezas": 5332,
+    "importe": 8227810950,
+    "indice": 3971.566
   }
 ]
