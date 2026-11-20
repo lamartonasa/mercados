@@ -1,8 +1,8 @@
 {
   "fecha": "20/11/2026",
   "provisorio": false,
-  "inmag": 3949.318,
-  "igmag": 3476.401,
+  "inmag": 3948.606,
+  "igmag": 3476.358,
   "totalCabezas": 4695,
   "categorias": [
     {
@@ -30,7 +30,7 @@
       "cat": "NOVILLOS Mest.EyB + 520",
       "min": 3000,
       "max": 4300,
-      "prom": 3668.5,
+      "prom": 3665.75,
       "cabezas": 178
     },
     {
@@ -135,7 +135,7 @@
       "cat": "MEJ EyB",
       "min": 4000,
       "max": 4800,
-      "prom": 4053.82,
+      "prom": 4061.154,
       "cabezas": 64
     },
     {
