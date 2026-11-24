@@ -1,32 +1,32 @@
 {
-  "fecha": "2026-11-19",
+  "fecha": "2026-11-20",
   "fuente": "Cámara Arbitral de Cereales — Bolsa de Cereales de Buenos Aires",
   "automatica": true,
   "precios": {
     "rosario": {
       "trigo": {
-        "pesos": 294084,
-        "usd": 189
+        "pesos": 298490,
+        "usd": 190
       },
       "maiz": {
-        "pesos": 272000,
-        "usd": 174.81
+        "pesos": 270212,
+        "usd": 172
       },
       "girasol": {
         "pesos": null,
         "usd": null,
-        "estimadoPesos": 746880,
+        "estimadoPesos": 754080,
         "estimadoUsd": 480
       },
       "soja": {
-        "pesos": 550000,
-        "usd": 353.47
+        "pesos": 560000,
+        "usd": 356.46
       }
     },
     "bahiaBlanca": {
       "trigo": {
         "pesos": null,
-        "usd": 230
+        "usd": 228
       },
       "maiz": {
         "pesos": null,

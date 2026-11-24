@@ -1,5 +1,5 @@
 {
-  "fecha": "2026-11-19",
+  "fecha": "2026-11-20",
   "flash": [
     {
       "grano": "Trigo",
@@ -9,15 +9,15 @@
           "filas": [
             {
               "mercado": "Rosario $/t",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "down",
               "precio": "294.084"
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "20/11",
+              "posicion": "06/07",
               "varDir": "up",
-              "precio": "300.000"
+              "precio": "301.000"
             }
           ]
         },
@@ -26,7 +26,7 @@
           "filas": [
             {
               "mercado": "Rosario Dic US$/t",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "down",
               "precio": "196,5"
             }
@@ -37,7 +37,7 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "down",
               "precio": "221"
             }
@@ -48,7 +48,7 @@
           "filas": [
             {
               "mercado": "Dic. US$/t",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "down",
               "precio": "211"
             }
@@ -59,7 +59,7 @@
           "filas": [
             {
               "mercado": "Valor de Mercado",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "up",
               "precio": "298.034"
             }
@@ -75,15 +75,15 @@
           "filas": [
             {
               "mercado": "Rosario $/t",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "up",
               "precio": "272.000"
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "20/11",
+              "posicion": "06/07",
               "varDir": "up",
-              "precio": "282.000"
+              "precio": "270.000"
             }
           ]
         },
@@ -92,7 +92,7 @@
           "filas": [
             {
               "mercado": "Rosario Dic US$/t",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "up",
               "precio": "182,2"
             }
@@ -103,7 +103,7 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "igual",
               "precio": "197"
             }
@@ -114,7 +114,7 @@
           "filas": [
             {
               "mercado": "Dic. US$/t",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "up",
               "precio": "171,06"
             }
@@ -125,7 +125,7 @@
           "filas": [
             {
               "mercado": "Valor de Mercado",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "up",
               "precio": "262.168"
             }
@@ -141,15 +141,15 @@
           "filas": [
             {
               "mercado": "Rosario $/t",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "up",
               "precio": "550.000"
             },
             {
               "mercado": "A3 Mercados",
-              "posicion": "20/11",
+              "posicion": "06/07",
               "varDir": "up",
-              "precio": "564.000"
+              "precio": "482.000"
             }
           ]
         },
@@ -158,7 +158,7 @@
           "filas": [
             {
               "mercado": "Rosario Nov US$/t",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "up",
               "precio": "360,1"
             }
@@ -169,7 +169,7 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "up",
               "precio": "474"
             }
@@ -179,10 +179,10 @@
           "titulo": "CBOT",
           "filas": [
             {
-              "mercado": "Nov. US$/t",
-              "posicion": "20/11",
+              "mercado": "Ene. US$/t",
+              "posicion": "23/11",
               "varDir": "up",
-              "precio": "456,73"
+              "precio": "448,56"
             }
           ]
         },
@@ -191,7 +191,7 @@
           "filas": [
             {
               "mercado": "Valor de Mercado",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "up",
               "precio": "577.830"
             }
@@ -213,9 +213,9 @@
             },
             {
               "mercado": "Disponible US$/t",
-              "posicion": "20/11",
+              "posicion": "06/07",
               "varDir": "igual",
-              "precio": "745.000"
+              "precio": "655.000"
             }
           ]
         },
@@ -235,7 +235,7 @@
           "filas": [
             {
               "mercado": "Spot US$/t",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "up",
               "precio": "593"
             }
@@ -246,7 +246,7 @@
           "filas": [
             {
               "mercado": "Valor de Mercado",
-              "posicion": "20/11",
+              "posicion": "23/11",
               "varDir": "up",
               "precio": "632.249"
             }
