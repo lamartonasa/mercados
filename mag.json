@@ -2,7 +2,7 @@
   "fecha": "20/11/2026",
   "provisorio": false,
   "inmag": 3948.606,
-  "igmag": 3476.286,
+  "igmag": 3476.294,
   "totalCabezas": 4695,
   "categorias": [
     {
@@ -79,7 +79,7 @@
       "cat": "VAQUILLONAS EyB P.391/430",
       "min": 2700,
       "max": 4100,
-      "prom": 3503.594,
+      "prom": 3503.75,
       "cabezas": 252
     },
     {
