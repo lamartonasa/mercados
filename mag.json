@@ -1,9 +1,9 @@
 {
   "fecha": "27/11/2026",
   "provisorio": false,
-  "inmag": 4061.44,
-  "igmag": 3460.062,
-  "totalCabezas": 6100,
+  "inmag": 4061.499,
+  "igmag": 3460.453,
+  "totalCabezas": 6103,
   "categorias": [
     {
       "cat": "NOVILLOS Mest.EyB 431/460",
@@ -16,8 +16,8 @@
       "cat": "NOVILLOS Mest.EyB 461/490",
       "min": 4000,
       "max": 4400,
-      "prom": 4247.471,
-      "cabezas": 182
+      "prom": 4238.259,
+      "cabezas": 185
     },
     {
       "cat": "NOVILLOS Mest.EyB 491/520",
@@ -30,8 +30,8 @@
       "cat": "NOVILLOS Mest.EyB + 520",
       "min": 3200,
       "max": 4200,
-      "prom": 3589.78,
-      "cabezas": 105
+      "prom": 3586.039,
+      "cabezas": 102
     },
     {
       "cat": "NOVILLOS Regulares Liv.",
@@ -72,8 +72,8 @@
       "cat": "NOVILLITOS EyB P. 391/430",
       "min": 3500,
       "max": 4600,
-      "prom": 4176.221,
-      "cabezas": 478
+      "prom": 4177.576,
+      "cabezas": 481
     },
     {
       "cat": "NOVILLITOS Regulares",
